@@ -1,0 +1,143 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conteo bibliométrico de GTAP — Candidatura Monterrey 2029</title>
+<meta name="description" content="Método y resultados del conteo de trabajos académicos que citan la metodología de GTAP. Reproducible con los scripts publicados.">
+<style>:root{--ink:#16181d;--navy:#0f2b46;--muted:#5b6470;--rule:#c9d2dc;--bg:#fdfdfb;--card:#f4f6f8;--link:#1a4f7a}
+@media(prefers-color-scheme:dark){:root{--ink:#e6e8ec;--navy:#9dc4e8;--muted:#98a2b0;--rule:#2c3542;--bg:#14171c;--card:#1c2129;--link:#7fb3dd}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,'Times New Roman',serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:3rem 1.5rem 5rem}
+header{border-bottom:2px solid var(--navy);padding-bottom:1.2rem;margin-bottom:2.2rem}
+h1{font-family:Helvetica,Arial,sans-serif;font-size:1.9rem;line-height:1.2;color:var(--navy);margin:0 0 .5rem;letter-spacing:-.02em}
+.sub{font-family:Helvetica,Arial,sans-serif;font-size:.82rem;color:var(--muted);margin:0;letter-spacing:.02em}
+h2{font-family:Helvetica,Arial,sans-serif;font-size:1.08rem;color:var(--navy);margin:2.6rem 0 .8rem;padding-bottom:.35rem;border-bottom:1px solid var(--rule)}
+h3{font-family:Helvetica,Arial,sans-serif;font-size:.92rem;color:var(--navy);margin:1.8rem 0 .5rem}
+p{margin:0 0 1rem}
+ul{padding-left:1.2rem;margin:0 0 1.1rem}li{margin-bottom:.5rem}
+strong{color:var(--navy)}
+a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--link)}
+.tablewrap{overflow-x:auto;margin:0 0 1.3rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{font-family:Helvetica,Arial,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:.4rem .6rem;border-bottom:1.5px solid var(--rule)}
+td{padding:.45rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+td:first-child{font-family:Helvetica,Arial,sans-serif;font-size:.8rem;color:var(--navy);font-weight:600}
+tbody tr:last-child td{border-bottom:none}
+.num{text-align:right;font-variant-numeric:tabular-nums;font-family:Helvetica,Arial,sans-serif;font-size:.84rem}
+.key{background:var(--card);border-left:3px solid var(--navy);padding:1rem 1.2rem;margin:0 0 1.3rem;border-radius:0 3px 3px 0}
+.key p:last-child{margin-bottom:0}
+.big{font-family:Helvetica,Arial,sans-serif;font-size:1.5rem;color:var(--navy);font-weight:700;line-height:1.2;display:block;margin-bottom:.3rem}
+nav{font-family:Helvetica,Arial,sans-serif;font-size:.82rem;margin-bottom:2rem}
+nav a{margin-right:1.2rem}
+footer{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
+.note{font-size:.86rem;color:var(--muted)}</style></head><body><div class="wrap">
+
+<header>
+<h1>Huella académica de GTAP</h1>
+<p class="sub">Conteo bibliométrico reproducible · Consulta del 25 de agosto de 2026</p>
+</header>
+
+<nav><a href="index.html">La candidatura</a><a href="bibliometria.html">Conteo bibliométrico</a><a href="acerca.html">Acerca de</a></nav>
+
+<div class="key">
+<p><span class="big">3,947</span>
+trabajos académicos distintos citan al menos una de las obras canónicas de GTAP. De ellos, <strong>14 tienen afiliación institucional mexicana</strong> — el 0.4%.</p>
+</div>
+
+<h2>Por qué hizo falta medirlo</h2>
+<p>GTAP no publica un conteo de producción académica. La única cifra que difundió fue en su boletín de 2017: «24,400+ citas en Google Scholar». Circula desde entonces sin actualizarse y sin método a la vista. Esta nota la sustituye por un conteo que cualquiera puede reproducir.</p>
+
+<h2>Método</h2>
+<p>Consulta a la API de <strong>OpenAlex</strong> con el filtro <code>cites:</code> uniendo con OR los identificadores de las obras canónicas del proyecto. El campo <code>meta.count</code> devuelve los trabajos <strong>distintos</strong> que citan al menos una de ellas, deduplicados del lado del servidor: un trabajo que cite cinco obras canónicas cuenta una vez.</p>
+<p>Los identificadores se resolvieron por búsqueda de título y se verificaron uno por uno contra autor y año. Los scripts no tienen dependencias externas ni requieren llave de API.</p>
+
+<h3>Por qué no se suman las citas obra por obra</h3>
+<p>Los catorce registros suman 4,864 citas, pero eso no es un conteo de trabajos: las obras se citan juntas con frecuencia. El traslape absorbido por la deduplicación es de <strong>917 trabajos</strong>. Reportar la suma inflaría la cifra en un 23%.</p>
+
+<h2>Las obras canónicas medidas</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Obra</th><th>Año</th><th class="num">Citas</th></tr></thead>
+<tbody>
+<tr><td>Dimaranan &amp; McDougall, <em>The GTAP 5 Data Base</em></td><td>2002</td><td class="num">1,122</td></tr>
+<tr><td>Hertel (ed.), <em>Global Trade Analysis: Modeling and Applications</em>, Cambridge University Press</td><td>1997</td><td class="num">895</td></tr>
+<tr><td>Burniaux &amp; Truong, «GTAP-E» <span class="note">(dos registros)</span></td><td>2002</td><td class="num">746</td></tr>
+<tr><td>Aguiar et al., «An Overview of the GTAP 9 Data Base»</td><td>2016</td><td class="num">576</td></tr>
+<tr><td>Aguiar et al., «The GTAP Data Base: Version 10»</td><td>2019</td><td class="num">498</td></tr>
+<tr><td>Corong et al., «The Standard GTAP Model, Version 7» <span class="note">(dos registros)</span></td><td>2017</td><td class="num">293</td></tr>
+<tr><td>Hertel &amp; Tsigas, «Structure of GTAP»</td><td>1997</td><td class="num">260</td></tr>
+<tr><td>Keeney &amp; Hertel, «GTAP-AGR» <span class="note">(dos registros)</span></td><td>2005</td><td class="num">179</td></tr>
+<tr><td>Aguiar et al., «The GTAP Data Base: Version 11»</td><td>2022</td><td class="num">154</td></tr>
+<tr><td>Ianchovichina &amp; Walmsley, <em>Dynamic Modeling and Applications</em></td><td>2012</td><td class="num">140</td></tr>
+<tr><td>Aguiar et al., «The GTAP Data Base: Version 12»</td><td>2025</td><td class="num">1</td></tr>
+<tr><td><strong>Suma con traslape</strong></td><td></td><td class="num"><strong>4,864</strong></td></tr>
+<tr><td><strong>Unión sin traslape</strong></td><td></td><td class="num"><strong>3,947</strong></td></tr>
+</tbody></table></div>
+<p class="note">Si se excluyen el volumen GTAP 5 y los registros duplicados, la unión es de 2,885. Ambas cifras son un piso.</p>
+
+<h2>Estructura de la literatura citante</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Tipo de trabajo</th><th class="num">Total</th></tr></thead>
+<tbody>
+<tr><td>Artículos de revista</td><td class="num">2,551</td></tr>
+<tr><td>Preprints</td><td class="num">671</td></tr>
+<tr><td>Capítulos de libro</td><td class="num">246</td></tr>
+<tr><td>Informes</td><td class="num">213</td></tr>
+<tr><td>Tesis doctorales</td><td class="num">92</td></tr>
+<tr><td>Libros</td><td class="num">73</td></tr>
+<tr><td>Ponencias</td><td class="num">41</td></tr>
+</tbody></table></div>
+
+<p><strong>111 países representados</strong>, y la cola no es anecdótica: 48 países tienen 10 o más trabajos citantes, 27 tienen 25 o más, y 13 superan los 100.</p>
+
+<p><strong>Ritmo:</strong> entre 150 y 220 trabajos citantes nuevos por año durante la última década — 218 en 2024, 186 en 2025. La serie es plana, no descendente.</p>
+
+<h3>América Latina</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>País</th><th class="num">Trabajos</th></tr></thead>
+<tbody>
+<tr><td>Brasil</td><td class="num">74</td></tr>
+<tr><td>Argentina</td><td class="num">26</td></tr>
+<tr><td>Chile</td><td class="num">19</td></tr>
+<tr><td>México</td><td class="num">14</td></tr>
+<tr><td>Colombia</td><td class="num">10</td></tr>
+<tr><td>Costa Rica</td><td class="num">5</td></tr>
+<tr><td>Perú</td><td class="num">3</td></tr>
+<tr><td>Uruguay</td><td class="num">3</td></tr>
+</tbody></table></div>
+<p>147 trabajos en total, 3.7% del conjunto. México es cuarto en la región, detrás de dos economías considerablemente más pequeñas, y no aparece entre los primeros 25 países del mundo.</p>
+<p class="note"><strong>Nota de lectura:</strong> la suma por país (5,142) excede la unión (3,947) porque un trabajo con coautores de varios países cuenta en cada uno. Los porcentajes se calculan sobre la unión, no sobre esa suma.</p>
+
+<h2>Por qué la cifra es un piso</h2>
+<ul>
+<li><strong>OpenAlex no indexa los volúmenes GTAP 6, 7 y 8</strong> como obras; solo tiene capítulos sueltos de su documentación, que casi no se citan. Las citas a esos tres volúmenes —los de mayor uso entre 2006 y 2016— quedan fuera de la unión.</li>
+<li><strong>Referencias no resueltas.</strong> OpenAlex descarta las referencias que no logra emparejar con una obra de su índice.</li>
+<li><strong>Afiliación incompleta.</strong> El desglose por país solo cubre trabajos cuya afiliación OpenAlex resuelve, de modo que los cortes regionales —incluido el de México— son también un piso.</li>
+<li><strong>Cobertura frente a Google Scholar.</strong> Scholar indexa tesis, documentos de trabajo, informes de organismos y literatura gris que OpenAlex no cubre, y mediría bastante más alto. Mide otra cosa, con otra cobertura. Si se obtiene, se reporta por separado con su fuente: no se promedian.</li>
+</ul>
+
+<h2>Verificación</h2>
+<p>Tres pruebas de consistencia:</p>
+<ul>
+<li>El filtro <code>cites:&lt;id&gt;</code> contra el <code>cited_by_count</code> de la misma obra coinciden con diferencias de 1 a 4 unidades —menos del 1%—, el desfase conocido entre el índice en vivo de OpenAlex y su campo cacheado.</li>
+<li>La unión de dos obras queda acotada entre el máximo individual y la suma. Se cumple.</li>
+<li>La unión total es menor que la suma con traslape, y el conteo es estable entre corridas. Se cumple.</li>
+</ul>
+
+<h2>Contraste entre fuentes</h2>
+<p>Medido sobre la misma obra —el modelo estándar de 2017— las tres bases dan:</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Fuente</th><th class="num">Citas</th><th>Qué explica la diferencia</th></tr></thead>
+<tbody>
+<tr><td>OpenAlex</td><td class="num">293</td><td>Dos registros del mismo artículo; deduplica peor los repetidos</td></tr>
+<tr><td>Semantic Scholar</td><td class="num">289</td><td>Cobertura amplia de preprints y literatura reciente</td></tr>
+<tr><td>Crossref</td><td class="num">58</td><td>Depende de que la revista deposite sus referencias, y <em>JGEA</em> no lo hace completo</td></tr>
+</tbody></table></div>
+<p>El orden es siempre el mismo: Google Scholar &gt; OpenAlex ≈ Semantic Scholar &gt; Crossref. Un conteo previo con Semantic Scholar, buscando «GTAP» en título y resumen, dio 3,108 trabajos — una medida distinta y peor, porque la mayoría de quienes usan GTAP lo mencionan en la sección de métodos y no en el resumen.</p>
+
+<h2>Reproducirlo</h2>
+<p>Los scripts están en la carpeta <code>scripts/</code> de este repositorio. Sin dependencias externas: solo biblioteca estándar de Python 3.</p>
+<p class="note">La consulta que produce la cifra es una sola:<br>
+<code>https://api.openalex.org/works?filter=cites:W1485558032|W2497463976|…&amp;per_page=1</code></p>
+
+<footer>Candidatura Monterrey 2029 · Consulta del 25 de agosto de 2026 · <a href="index.html">Volver a la candidatura</a></footer>
+</div></body></html>
