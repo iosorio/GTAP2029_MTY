@@ -15,11 +15,11 @@ Para eso mantiene cuatro cosas:
 - **Formación.** Cursos cortos de modelación; el curso anual va en su 33ª edición.
 - **Publicación y encuentro.** El *Journal of Global Economic Analysis* y la conferencia anual.
 
-Es el insumo con el que gobiernos, bancos centrales y organismos internacionales evalúan acuerdos comerciales, reformas fiscales y transición energética. **El alcance internacional de GTAP también es medible:** 3,947 trabajos académicos distintos, procedentes de 111 países, citan su metodología, con un ritmo estable de entre 150 y 220 nuevos trabajos por año durante la última década.
+Es el insumo con el que gobiernos, bancos centrales y organismos internacionales evalúan acuerdos comerciales, reformas fiscales y transición energética. **El alcance internacional de GTAP también es medible:** 5,878 trabajos académicos distintos, procedentes de 129 países, citan la producción del proyecto, con un ritmo estable de entre 228 y 336 nuevos trabajos por año durante la última década.
 
 Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, OCDE, BID, FAO, IFPRI, PNUD, las comisiones económicas de la ONU, la Comisión Europea, la U.S. International Trade Commission, el USDA y el Banco Asiático de Desarrollo, entre otras. **No es un club de universidades:** lo integran quienes usan los datos para decidir. De las 28, Peking University es la única universidad que figura por nombre propio.
 
-**Ninguna institución mexicana ni latinoamericana forma parte del consorcio**, y la ausencia se repite en la literatura: de los mencionados 3,947 trabajos, **solo 14 tienen afiliación mexicana. El 0.4%.** Estados Unidos aporta 1,131; China y Alemania, 408 cada uno. En la región, México va cuarto —detrás de Brasil (74), Argentina (26) y Chile (19)— pese a ser la segunda economía de América Latina y la más expuesta al comercio.
+**Ninguna institución mexicana ni latinoamericana forma parte del consorcio**, y la ausencia se repite en la literatura: de los mencionados 5,878 trabajos, **solo 24 tienen afiliación mexicana. El 0.4%** —la misma proporción bajo tres definiciones distintas del universo. Estados Unidos aporta 1,733; China 551 y Alemania 550. México ocupa el lugar 35 de 129 países y aparece **cinco veces menos que Brasil** (110), pese a ser la otra gran economía de la región y la más expuesta al comercio.
 
 ## La conferencia anual
 

@@ -29,34 +29,45 @@ Las tres páginas son HTML autocontenido: sin CDN, sin JavaScript, sin dependenc
 
 ## La cifra principal
 
-**3,947 trabajos académicos distintos citan la metodología de GTAP**, procedentes de 111 países.
-De ellos, **14 tienen afiliación institucional mexicana** — el 0.4%.
+**5,878 trabajos académicos distintos citan la producción del Global Trade Analysis Project**,
+procedentes de 129 países. De ellos, **24 tienen afiliación institucional mexicana** — el 0.41%.
 
-No es una suma de citas. Es el conteo de trabajos distintos que citan al menos una de las
-obras canónicas del proyecto, deduplicado del lado del servidor por OpenAlex. Sumar las citas
-obra por obra habría dado 4,864 e inflado la cifra un 23%, porque muchos trabajos citan varias
-obras a la vez.
+No es una suma de citas. Es el conteo de trabajos distintos que citan al menos una de las 323
+obras del corpus del proyecto —sus tres series de documentos y su revista, más los libros y
+volúmenes de base de datos—, deduplicado por identificador. Las citas suman 8,825; reportar esa
+suma inflaría la cifra en un 50%, porque muchos trabajos citan varias obras a la vez.
 
-Es además un **piso**: OpenAlex no indexa tres de los volúmenes de la base de datos, y no cubre
-la literatura gris —informes de ministerios, evaluaciones regulatorias— que es donde GTAP más
-se usa. El método y sus límites están documentados en `bibliometria.html`.
+**El 0.4% mexicano es estable bajo tres definiciones distintas del universo**, con coberturas que
+difieren por un factor de tres: 0.35% sobre las 14 obras canónicas, 0.41% sobre las 323 del
+corpus, 0.40% sobre los 12,499 trabajos que mencionan «GTAP» en texto completo. Esa estabilidad,
+y no el tamaño del conteo, es lo que sostiene el argumento.
+
+La cifra es además un **piso**: OpenAlex no indexa tres de los volúmenes de la base de datos ni
+los conference papers, y no cubre toda la literatura gris. El método, sus límites y la
+reconciliación con el «24,400+ citations» que GTAP difundió en 2017 —descompuesto en 1.73x de
+universo semilla por 5.00x de cobertura de Google Scholar— están en `bibliometria.html`.
 
 ## Reproducir el conteo
 
+> **Pendiente:** los scripts viven en la carpeta de trabajo `bibliometria/`, que está fuera de
+> este repositorio, así que quien clone el sitio todavía no puede volver a correr el conteo.
+> Publicarlos aquí es el siguiente paso.
+
+Los scripts que producen las cifras publicadas:
+
 ```bash
-python3 scripts/cite.py     # obras canónicas y corpus en Semantic Scholar
-python3 scripts/cite2.py    # citas acumuladas del corpus
+python3 02_conteo_openalex.py      > resultados_openalex.json          # 14 obras canónicas
+python3 05_universo_ampliado.py    > resultados_universo_ampliado.json # 323 obras del corpus
+python3 06_cobertura_fuentes.py    > resultados_cobertura.json         # OpenAlex/Crossref/S2
+python3 07_reconciliacion_2017.py  > resultados_reconciliacion.json    # la brecha de 2017
+python3 09_procesar_pop.py pop_csv/*.csv > resultados_pop.json         # Google Scholar
 ```
 
-Sin dependencias externas: solo biblioteca estándar de Python 3, sin llave de API.
+Sin dependencias externas: sólo biblioteca estándar de Python 3, sin llave de API. `05` y `07`
+tardan varios minutos porque recorren las 323 obras de la semilla una por una.
 
-La cifra principal viene de OpenAlex y sale de una sola consulta:
-
-```
-https://api.openalex.org/works?filter=cites:<id>|<id>|...&per_page=1
-```
-
-El campo `meta.count` de la respuesta es el número.
+`scripts/` en este directorio conserva los sondeos previos con Semantic Scholar (`cite.py`,
+`cite2.py`) y el generador del PDF.
 
 ## Regenerar el PDF
 
