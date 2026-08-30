@@ -22,6 +22,7 @@ Produce tres cantidades, que NO deben confundirse entre si:
 
 Uso:  python3 05_universo_ampliado.py > resultados_universo_ampliado.json
 """
+import os
 import json
 import sys
 import time
@@ -29,7 +30,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MAILTO = "osorio.israel@gmail.com"
+# Contacto para el "polite pool" de OpenAlex y Crossref. Las APIs son abiertas
+# y no piden llave; el correo solo da prioridad de cola. Se toma del entorno
+# para no publicarlo:  export OPENALEX_MAILTO="tu-correo@institucion.edu"
+MAILTO = os.environ.get("OPENALEX_MAILTO", "gtap-bibliometria@example.org")
 BASE = "https://api.openalex.org"
 
 # Series que OpenAlex indexa como fuentes propias del proyecto GTAP.

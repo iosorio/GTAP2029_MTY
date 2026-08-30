@@ -20,6 +20,7 @@ Google Scholar / OpenAlex, que es la cantidad que la Ruta B debe verificar.
 
 Uso:  python3 07_reconciliacion_2017.py > resultados_reconciliacion.json
 """
+import os
 import json
 import sys
 import time
@@ -27,7 +28,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MAILTO = "osorio.israel@gmail.com"
+# Contacto para el "polite pool" de OpenAlex y Crossref. Las APIs son abiertas
+# y no piden llave; el correo solo da prioridad de cola. Se toma del entorno
+# para no publicarlo:  export OPENALEX_MAILTO="tu-correo@institucion.edu"
+MAILTO = os.environ.get("OPENALEX_MAILTO", "gtap-bibliometria@example.org")
 BASE = "https://api.openalex.org/works"
 CORTE = 2017
 PAUSA = 0.12

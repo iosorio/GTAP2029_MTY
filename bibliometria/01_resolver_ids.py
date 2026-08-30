@@ -7,12 +7,16 @@ persona verifique cada coincidencia antes de fijar el ID.
 
 Uso:  python3 01_resolver_ids.py > candidatos.txt
 """
+import os
 import json
 import time
 import urllib.parse
 import urllib.request
 
-MAILTO = "osorio.israel@gmail.com"
+# Contacto para el "polite pool" de OpenAlex y Crossref. Las APIs son abiertas
+# y no piden llave; el correo solo da prioridad de cola. Se toma del entorno
+# para no publicarlo:  export OPENALEX_MAILTO="tu-correo@institucion.edu"
+MAILTO = os.environ.get("OPENALEX_MAILTO", "gtap-bibliometria@example.org")
 BASE = "https://api.openalex.org/works"
 
 # (etiqueta_corta, titulo_de_busqueda, autor_esperado, anio_esperado)

@@ -8,12 +8,16 @@ Tres pruebas:
   3. La union total debe ser < la suma de todos los cited_by_count
      (si fuera igual, no habria traslape y algo estaria mal).
 """
+import os
 import json
 import time
 import urllib.parse
 import urllib.request
 
-M = "osorio.israel@gmail.com"
+# Contacto para el "polite pool" de OpenAlex y Crossref. Las APIs son abiertas
+# y no piden llave; el correo solo da prioridad de cola. Se toma del entorno
+# para no publicarlo:  export OPENALEX_MAILTO="tu-correo@institucion.edu"
+M = os.environ.get("OPENALEX_MAILTO", "gtap-bibliometria@example.org")
 
 
 def get(u):

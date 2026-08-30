@@ -14,13 +14,14 @@ pierde un indice porque no logra resolver la referencia. NO mide el componente
 de LITERATURA GRIS -- tesis, working papers, informes de organismos y versiones
 duplicadas que Google Scholar indexa y estas tres no. Ese segundo componente
 solo lo mide Google Scholar, y solo con Publish or Perish operado a mano
-(ver 07_protocolo_scholar.md).
+(ver 08_protocolo_scholar.md).
 
 Por eso el resultado de este script es un PISO del factor de cobertura, no el
 factor completo.
 
 Uso:  python3 06_cobertura_fuentes.py > resultados_cobertura.json
 """
+import os
 import json
 import sys
 import time
@@ -28,7 +29,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MAILTO = "osorio.israel@gmail.com"
+# Contacto para el "polite pool" de OpenAlex y Crossref. Las APIs son abiertas
+# y no piden llave; el correo solo da prioridad de cola. Se toma del entorno
+# para no publicarlo:  export OPENALEX_MAILTO="tu-correo@institucion.edu"
+MAILTO = os.environ.get("OPENALEX_MAILTO", "gtap-bibliometria@example.org")
 
 OBRAS = [
     ("W1485558032", "Global Trade Analysis: Modeling and Applications", 1997),
