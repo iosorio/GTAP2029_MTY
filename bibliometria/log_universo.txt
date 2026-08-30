@@ -1,0 +1,26 @@
+== 1. Semilla: series propias de GTAP ==
+  GTAP Working Paper Series                   98 obras,  1629 citas
+  GTAP Technical Paper Series                 37 obras,  1172 citas
+  GTAP Research Memoranda Series              39 obras,   541 citas
+  Journal of Global Economic Analysis        143 obras,  2619 citas
+== 2. Semilla: obras canonicas fuera de serie ==
+  + Global Trade Analysis: Modeling and Applications       895 citas
+  + Structure of GTAP                                      260 citas
+  + GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP    417 citas
+  + Dynamic Modeling and Applications for Global Economi   140 citas
+  + GTAP-AGR: A Framework for Assessing the Implications    30 citas
+  + Global trade, assistance, and production : The GTAP   1122 citas
+  SEMILLA: 323 obras, 8825 citas sumadas (con traslape)
+== 3. Union de trabajos citantes ==
+    lote 1/7: 2000 registros
+  lote 1: union acumulada = 2240
+    lote 2/7: 2000 registros
+  lote 2: union acumulada = 4191
+  lote 3: union acumulada = 4945
+  lote 4: union acumulada = 5401
+  lote 5: union acumulada = 5616
+  lote 6: union acumulada = 5877
+  lote 7: union acumulada = 5878
+== 4. Desglose por pais ==
+
+LISTO: semilla 323 obras | 8825 citas | union 5878 trabajos | 129 paises

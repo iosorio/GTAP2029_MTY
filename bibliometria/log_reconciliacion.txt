@@ -1,0 +1,15 @@
+== rearmando semilla ==
+  323 obras en la semilla
+== citas por obra, acervo 2017 vs acervo actual ==
+  40/323  acum: hoy 1883, 2017 1524
+  80/323  acum: hoy 5192, 2017 3468
+  120/323  acum: hoy 6059, 2017 3524
+  160/323  acum: hoy 6941, 2017 3941
+  200/323  acum: hoy 7897, 2017 4576
+  240/323  acum: hoy 8284, 2017 4579
+  280/323  acum: hoy 8740, 2017 4863
+  320/323  acum: hoy 8833, 2017 4879
+
+Semilla 323 obras | citas hoy 8833 | citas a 2017: 4879
+Ruta A a 2017: 2818 citas
+factor semilla 1.73x | cobertura implicita 5.00x | brecha total 8.66x

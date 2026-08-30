@@ -1,0 +1,24 @@
+Paso 4: leyendo cited_by_count de cada obra canonica...
+  hertel1997     W1485558032  cb=895
+  structure      W2497463976  cb=260
+  gtap9          W2413227257  cb=576
+  gtap10         W2955545697  cb=498
+  standard7      W2633769093  cb=166
+  standard7_dup  W4242531241  cb=127
+  gtap11         W4320021891  cb=154
+  gtap12         W7117369847  cb=1
+  gtape          W2141229371  cb=417
+  gtape_dup      W3123830708  cb=329
+  dynamic        W1574368972  cb=140
+  gtapagr        W3121700781  cb=149
+  gtapagr_dup    W1525723848  cb=30
+  gtap5          W2403987006  cb=1122
+
+Paso 2: contando la union...
+  estricto (10 obras): 2885
+  ampliado (14 registros): 3947
+
+Paso 3: desgloses sobre el conjunto ampliado...
+
+Cortes regionales (consulta unica, sin doble conteo)...
+  Mexico: 14   America Latina: 147

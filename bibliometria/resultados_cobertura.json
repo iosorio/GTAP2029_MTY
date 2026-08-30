@@ -1,0 +1,196 @@
+{
+  "fecha_consulta": "2026-08-30",
+  "advertencia": "Estas tres fuentes son indices academicos con emparejamiento de referencias. Su dispersion acota el componente de emparejamiento de la brecha, NO el componente de literatura gris que Google Scholar indexa y ellas no. El factor de cobertura que sale de aqui es un piso del factor real frente a Scholar.",
+  "por_obra": [
+    {
+      "etiqueta": "Global Trade Analysis: Modeling and Applications",
+      "openalex_id": "W1485558032",
+      "doi": null,
+      "anio": 1997,
+      "tipo": "book",
+      "openalex": 895,
+      "crossref": null,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": null,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "Structure of GTAP",
+      "openalex_id": "W2497463976",
+      "doi": "10.1017/cbo9781139174688.003",
+      "anio": 1996,
+      "tipo": "book-chapter",
+      "openalex": 260,
+      "crossref": 61,
+      "semantic_scholar": 362,
+      "razon_openalex_sobre_crossref": 4.26,
+      "razon_openalex_sobre_semantic_scholar": 0.72
+    },
+    {
+      "etiqueta": "An Overview of the GTAP 9 Data Base",
+      "openalex_id": "W2413227257",
+      "doi": "10.21642/jgea.010103af",
+      "anio": 2016,
+      "tipo": "article",
+      "openalex": 576,
+      "crossref": 346,
+      "semantic_scholar": 622,
+      "razon_openalex_sobre_crossref": 1.66,
+      "razon_openalex_sobre_semantic_scholar": 0.93
+    },
+    {
+      "etiqueta": "The GTAP Data Base: Version 10",
+      "openalex_id": "W2955545697",
+      "doi": "10.21642/jgea.040101af",
+      "anio": 2019,
+      "tipo": "article",
+      "openalex": 498,
+      "crossref": 378,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": 1.32,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "The Standard GTAP Model, Version 7",
+      "openalex_id": "W2633769093",
+      "doi": "10.21642/jgea.020101af",
+      "anio": 2017,
+      "tipo": "article",
+      "openalex": 166,
+      "crossref": 58,
+      "semantic_scholar": 290,
+      "razon_openalex_sobre_crossref": 2.86,
+      "razon_openalex_sobre_semantic_scholar": 0.57
+    },
+    {
+      "etiqueta": "The Standard GTAP Model: Version 7 (duplicado)",
+      "openalex_id": "W4242531241",
+      "doi": "10.21642/jgea.0201xxad",
+      "anio": 2017,
+      "tipo": "article",
+      "openalex": 127,
+      "crossref": 3,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": 42.33,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "The GTAP Data Base: Version 11",
+      "openalex_id": "W4320021891",
+      "doi": "10.21642/jgea.070201af",
+      "anio": 2022,
+      "tipo": "article",
+      "openalex": 154,
+      "crossref": 120,
+      "semantic_scholar": 120,
+      "razon_openalex_sobre_crossref": 1.28,
+      "razon_openalex_sobre_semantic_scholar": 1.28
+    },
+    {
+      "etiqueta": "The GTAP Data Base: Version 12",
+      "openalex_id": "W7117369847",
+      "doi": "10.21642/jgea.100201af",
+      "anio": 2025,
+      "tipo": "article",
+      "openalex": 1,
+      "crossref": 1,
+      "semantic_scholar": 4,
+      "razon_openalex_sobre_crossref": 1.0,
+      "razon_openalex_sobre_semantic_scholar": 0.25
+    },
+    {
+      "etiqueta": "GTAP-E: An Energy-Environmental Version",
+      "openalex_id": "W2141229371",
+      "doi": "10.22004/ag.econ.28705",
+      "anio": 2002,
+      "tipo": "preprint",
+      "openalex": 417,
+      "crossref": null,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": null,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "GTAP-E (duplicado, Technical Paper 16)",
+      "openalex_id": "W3123830708",
+      "doi": "10.21642/gtap.tp16",
+      "anio": 2002,
+      "tipo": "report",
+      "openalex": 329,
+      "crossref": 221,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": 1.49,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "Dynamic Modeling and Applications",
+      "openalex_id": "W1574368972",
+      "doi": "10.1017/cbo9781139059923",
+      "anio": 2012,
+      "tipo": "book",
+      "openalex": 140,
+      "crossref": 47,
+      "semantic_scholar": 73,
+      "razon_openalex_sobre_crossref": 2.98,
+      "razon_openalex_sobre_semantic_scholar": 1.92
+    },
+    {
+      "etiqueta": "GTAP-AGR",
+      "openalex_id": "W3121700781",
+      "doi": "10.21642/gtap.tp24",
+      "anio": 2005,
+      "tipo": "report",
+      "openalex": 149,
+      "crossref": 60,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": 2.48,
+      "razon_openalex_sobre_semantic_scholar": null
+    },
+    {
+      "etiqueta": "GTAP-AGR (duplicado)",
+      "openalex_id": "W1525723848",
+      "doi": "10.22004/ag.econ.283422",
+      "anio": 2005,
+      "tipo": "article",
+      "openalex": 30,
+      "crossref": null,
+      "semantic_scholar": 188,
+      "razon_openalex_sobre_crossref": null,
+      "razon_openalex_sobre_semantic_scholar": 0.16
+    },
+    {
+      "etiqueta": "GTAP 5 Data Base",
+      "openalex_id": "W2403987006",
+      "doi": null,
+      "anio": 2002,
+      "tipo": "book",
+      "openalex": 1122,
+      "crossref": null,
+      "semantic_scholar": null,
+      "razon_openalex_sobre_crossref": null,
+      "razon_openalex_sobre_semantic_scholar": null
+    }
+  ],
+  "totales_columna_completa": {
+    "valores": {
+      "openalex": 4864,
+      "crossref": 1295,
+      "semantic_scholar": 1659
+    },
+    "advertencia": "estas sumas cubren distinto numero de obras en cada columna y NO deben dividirse entre si; usar razones_sobre_pares_completos"
+  },
+  "razones_sobre_pares_completos": {
+    "crossref": {
+      "obras_comparables": 10,
+      "openalex": 2400,
+      "fuente": 1295,
+      "razon_openalex_sobre_fuente": 1.85
+    },
+    "semantic_scholar": {
+      "obras_comparables": 7,
+      "openalex": 1327,
+      "fuente": 1659,
+      "razon_openalex_sobre_fuente": 0.8
+    }
+  }
+}

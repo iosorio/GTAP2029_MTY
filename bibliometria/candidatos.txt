@@ -1,0 +1,325 @@
+====================================================================================================
+[hertel1997]  BUSCADO: Global Trade Analysis: Modeling and Applications
+              ESPERADO: Hertel, 1997
+----------------------------------------------------------------------------------------------------
+   1. W1485558032  1997  cited_by=895  type=book
+      titulo: Global Trade Analysis: Modeling and Applications
+      autores: Thomas W. Hertel
+      doi: https://doi.org/10.1017/cbo9781139174688
+   2. W2105846236  2014  cited_by=35771  type=article
+      titulo: A new criterion for assessing discriminant validity in variance-based structural equation modeling
+      autores: Jörg Henseler, Christian M. Ringle, Marko Sarstedt
+      doi: https://doi.org/10.1007/s11747-014-0403-8
+   3. W3168997536  2021  cited_by=5066  type=article
+      titulo: A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects
+      autores: Zewen Li, Fan Liu, Wenjie Yang, Shouheng Peng et al.
+      doi: https://doi.org/10.1109/tnnls.2021.3084827
+   4. W2592929672  2017  cited_by=15016  type=article
+      titulo: A survey on deep learning in medical image analysis
+      autores: Geert Litjens, Thijs Kooi, Babak Ehteshami Bejnordi, Arnaud A. A. Setio et al.
+      doi: https://doi.org/10.1016/j.media.2017.07.005
+   5. W2108344016  2012  cited_by=8442  type=article
+      titulo: Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010
+      autores: Theo Vos, Abraham D Flaxman, Mohsen Naghavi, Rafael Lozano et al.
+      doi: https://doi.org/10.1016/s0140-6736(12)61729-2
+
+====================================================================================================
+[gtap9]  BUSCADO: An Overview of the GTAP 9 Data Base
+              ESPERADO: Aguiar, 2016
+----------------------------------------------------------------------------------------------------
+   1. W2413227257  2016  cited_by=576  type=article
+      titulo: An Overview of the GTAP 9 Data Base
+      autores: Angel Aguiar, Badri Narayanan, Robert McDougall
+      doi: https://doi.org/10.21642/jgea.010103af
+   2. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   3. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   4. W2148735399  2001  cited_by=77  type=preprint
+      titulo: A GRAPHICAL EXPOSITION OF THE GTAP MODEL
+      autores: Martina Brockmeier, Brockmeier, Martina
+      doi: https://doi.org/10.22004/ag.econ.28706
+   5. W3123302210  2000  cited_by=79  type=report
+      titulo: Theoretical Structure of Dynamic GTAP
+      autores: Elena Ianchovichina, Robert McDougall
+      doi: https://doi.org/10.21642/gtap.tp17
+
+====================================================================================================
+[gtap10]  BUSCADO: The GTAP Data Base: Version 10
+              ESPERADO: Aguiar, 2019
+----------------------------------------------------------------------------------------------------
+   1. W2955545697  2019  cited_by=498  type=article
+      titulo: The GTAP Data Base: Version 10
+      autores: Angel Aguiar, Maksym Chepeliev, Erwin Corong, Robert McDougall et al.
+      doi: https://doi.org/10.21642/jgea.040101af
+   2. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   3. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   4. W3111096371  2020  cited_by=42  type=article
+      titulo: GTAP- Power Database: Version 10
+      autores: Maksym Chepeliev
+      doi: https://doi.org/10.21642/jgea.050203af
+   5. W2125727360  1998  cited_by=82  type=preprint
+      titulo: ADJUSTING TAX RATES IN THE GTAP DATA BASE
+      autores: Gerard Malcolm, Malcolm, Gerard
+      doi: https://doi.org/10.22004/ag.econ.28721
+
+====================================================================================================
+[structure]  BUSCADO: Structure of GTAP
+              ESPERADO: Hertel/Tsigas, 2000
+----------------------------------------------------------------------------------------------------
+   1. W2497463976  1996  cited_by=260  type=book-chapter
+      titulo: Structure of GTAP
+      autores: Thomas W. Hertel, Marinos Tsigas
+      doi: https://doi.org/10.1017/cbo9781139174688.003
+   2. W2118137146  2012  cited_by=164  type=book-chapter
+      titulo: Theoretical Structure of Dynamic GTAP
+      autores: Elena Ianchovichina, Robert A. McDougall
+      doi: https://doi.org/10.1017/cbo9781139059923.002
+   3. W3123302210  2000  cited_by=79  type=report
+      titulo: Theoretical Structure of Dynamic GTAP
+      autores: Elena Ianchovichina, Robert McDougall
+      doi: https://doi.org/10.21642/gtap.tp17
+   4. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   5. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+
+====================================================================================================
+[standard7]  BUSCADO: The Standard GTAP Model, Version 7
+              ESPERADO: Corong, 2017
+----------------------------------------------------------------------------------------------------
+   1. W2633769093  2017  cited_by=166  type=article
+      titulo: The Standard GTAP Model, version 7
+      autores: Erwin Corong, Thomas W. Hertel, McDougall Robert, Marinos Tsigas et al.
+      doi: https://doi.org/10.21642/jgea.020101af
+   2. W4242531241  2017  cited_by=127  type=article
+      titulo: The Standard GTAP Model: Version 7
+      autores: Erwin Corong
+      doi: https://doi.org/10.21642/jgea.0201xxad
+   3. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   4. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   5. W2810363352  2018  cited_by=27  type=article
+      titulo: The Standard GTAP Model in GAMS, Version 7
+      autores: Dominique van der Mensbrugghe
+      doi: https://doi.org/10.21642/jgea.030101af
+
+====================================================================================================
+[gtap11]  BUSCADO: The GTAP Data Base: Version 11
+              ESPERADO: Aguiar, 2022
+----------------------------------------------------------------------------------------------------
+   1. W4320021891  2022  cited_by=154  type=article
+      titulo: The Global Trade Analysis Project (GTAP) Data Base: Version 11
+      autores: Angel Aguiar, Maksym Chepeliev, Erwin Corong, Dominique van der Mensbrugghe
+      doi: https://doi.org/10.21642/jgea.070201af
+   2. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   3. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   4. W4389720055  2023  cited_by=13  type=article
+      titulo: GTAP-Power Data Base: Version 11
+      autores: Maksym Chepeliev
+      doi: https://doi.org/10.21642/jgea.080203af
+   5. W1516162043  2012  cited_by=68  type=preprint
+      titulo: Introduction to the Global Trade Analysis Project and the GTAP Data Base
+      autores: Terrie Walmsley, Angel Aguiar, Badri Narayanan, Walmsley, Terrie L. et al.
+      doi: https://doi.org/10.22004/ag.econ.283485
+
+====================================================================================================
+[gtap8]  BUSCADO: Global Trade Assistance and Production: The GTAP 8 Data Base
+              ESPERADO: Narayanan, 2012
+----------------------------------------------------------------------------------------------------
+   1. W2599875507  2017  cited_by=1072  type=article
+      titulo: Transboundary health impacts of transported global air pollution and international trade
+      autores: Qiang Zhang, Xujia Jiang, Dan Tong, Steven J. Davis et al.
+      doi: https://doi.org/10.1038/nature21712
+   2. W1992683955  2008  cited_by=1253  type=other
+      titulo: CO 2 Embodied in International Trade with Implications for Global Climate Policy
+      autores: Glen P. Peters, Edgar G. Hertwich
+      doi: https://doi.org/10.1021/es072023k
+   3. W3093432062  2020  cited_by=2568  type=article
+      titulo: Global Carbon Budget 2020
+      autores: Pierre Friedlingstein, Michael O’Sullivan, Matthew W. Jones, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-12-3269-2020
+   4. W2979653715  2019  cited_by=1720  type=article
+      titulo: Global Carbon Budget 2019
+      autores: Pierre Friedlingstein, Matthew W. Jones, Michael O’Sullivan, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-11-1783-2019
+   5. W2915336810  2018  cited_by=1687  type=article
+      titulo: Global Carbon Budget 2018
+      autores: Corinne Le Quéré, Robbie M. Andrew, Pierre Friedlingstein, Stephen Sitch et al.
+      doi: https://doi.org/10.5194/essd-10-2141-2018
+
+====================================================================================================
+[gtap7]  BUSCADO: Global Trade Assistance and Production: The GTAP 7 Data Base
+              ESPERADO: Narayanan/Walmsley, 2008
+----------------------------------------------------------------------------------------------------
+   1. W3093432062  2020  cited_by=2568  type=article
+      titulo: Global Carbon Budget 2020
+      autores: Pierre Friedlingstein, Michael O’Sullivan, Matthew W. Jones, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-12-3269-2020
+   2. W1992683955  2008  cited_by=1253  type=other
+      titulo: CO 2 Embodied in International Trade with Implications for Global Climate Policy
+      autores: Glen P. Peters, Edgar G. Hertwich
+      doi: https://doi.org/10.1021/es072023k
+   3. W2599875507  2017  cited_by=1072  type=article
+      titulo: Transboundary health impacts of transported global air pollution and international trade
+      autores: Qiang Zhang, Xujia Jiang, Dan Tong, Steven J. Davis et al.
+      doi: https://doi.org/10.1038/nature21712
+   4. W2979653715  2019  cited_by=1720  type=article
+      titulo: Global Carbon Budget 2019
+      autores: Pierre Friedlingstein, Matthew W. Jones, Michael O’Sullivan, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-11-1783-2019
+   5. W2915336810  2018  cited_by=1687  type=article
+      titulo: Global Carbon Budget 2018
+      autores: Corinne Le Quéré, Robbie M. Andrew, Pierre Friedlingstein, Stephen Sitch et al.
+      doi: https://doi.org/10.5194/essd-10-2141-2018
+
+====================================================================================================
+[gtap6]  BUSCADO: Global Trade Assistance and Production: The GTAP 6 Data Base
+              ESPERADO: Dimaranan, 2006
+----------------------------------------------------------------------------------------------------
+   1. W1992683955  2008  cited_by=1253  type=other
+      titulo: CO 2 Embodied in International Trade with Implications for Global Climate Policy
+      autores: Glen P. Peters, Edgar G. Hertwich
+      doi: https://doi.org/10.1021/es072023k
+   2. W3093432062  2020  cited_by=2568  type=article
+      titulo: Global Carbon Budget 2020
+      autores: Pierre Friedlingstein, Michael O’Sullivan, Matthew W. Jones, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-12-3269-2020
+   3. W2599875507  2017  cited_by=1072  type=article
+      titulo: Transboundary health impacts of transported global air pollution and international trade
+      autores: Qiang Zhang, Xujia Jiang, Dan Tong, Steven J. Davis et al.
+      doi: https://doi.org/10.1038/nature21712
+   4. W2979653715  2019  cited_by=1720  type=article
+      titulo: Global Carbon Budget 2019
+      autores: Pierre Friedlingstein, Matthew W. Jones, Michael O’Sullivan, Robbie M. Andrew et al.
+      doi: https://doi.org/10.5194/essd-11-1783-2019
+   5. W2915336810  2018  cited_by=1687  type=article
+      titulo: Global Carbon Budget 2018
+      autores: Corinne Le Quéré, Robbie M. Andrew, Pierre Friedlingstein, Stephen Sitch et al.
+      doi: https://doi.org/10.5194/essd-10-2141-2018
+
+====================================================================================================
+[gtape]  BUSCADO: GTAP-E: An Energy-Environmental Version of the GTAP Model
+              ESPERADO: Burniaux/Truong, 2002
+----------------------------------------------------------------------------------------------------
+   1. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   2. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   3. W2096546402  2007  cited_by=27  type=preprint
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading
+      autores: Truong Phuoc Truong, Claudia Kemfert, Jean-Marc Burniaux
+      doi: None
+   4. W1578205178  2009  cited_by=32  type=report
+      titulo: GTAP-E: A Revised Energy-Environmental Version of the GTAP Model
+      autores: Robert McDougall, Alla Golub
+      doi: https://doi.org/10.21642/gtap.rm15
+   5. W2922295507  2007  cited_by=6  type=article
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading - USER’S GUIDE
+      autores: Truong Truong
+      doi: None
+
+====================================================================================================
+[dynamic]  BUSCADO: Dynamic Modeling and Applications for Global Economic Analysis
+              ESPERADO: Ianchovichina/Walmsley, 2012
+----------------------------------------------------------------------------------------------------
+   1. W1574368972  2012  cited_by=140  type=book
+      titulo: Dynamic Modeling and Applications for Global Economic Analysis
+      autores: Elena Ianchovichina, Terrie Walmsley
+      doi: https://doi.org/10.1017/cbo9781139059923
+   2. W2089402107  2000  cited_by=14639  type=article
+      titulo: Dynamic capabilities: what are they?
+      autores: Kathleen M. Eisenhardt, Jeffrey A. Martin
+      doi: https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e
+   3. W2114837397  2002  cited_by=2210  type=article
+      titulo: Global production networks and the analysis of economic development
+      autores: Jeffrey Henderson, Peter Dicken, Martin Heß, Neil M. Coe et al.
+      doi: https://doi.org/10.1080/09692290210150842
+   4. W2738241474  2017  cited_by=3318  type=article
+      titulo: Business models and dynamic capabilities
+      autores: David J. Teece
+      doi: https://doi.org/10.1016/j.lrp.2017.06.007
+   5. W3136179920  2021  cited_by=5043  type=article
+      titulo: ERA5-Land: a state-of-the-art global reanalysis dataset for land applications
+      autores: Joaquín Muñoz‐Sabater, Emanuel Dutra, Anna Agustí‐Panareda, Clément Albergel et al.
+      doi: https://doi.org/10.5194/essd-13-4349-2021
+
+====================================================================================================
+[gtapagr]  BUSCADO: GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies
+              ESPERADO: Keeney/Hertel, 2005
+----------------------------------------------------------------------------------------------------
+   1. W3121700781  2005  cited_by=149  type=report
+      titulo: GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies
+      autores: Roman Keeney, Thomas W. Hertel
+      doi: https://doi.org/10.21642/gtap.tp24
+   2. W1525723848  2005  cited_by=30  type=article
+      titulo: GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies
+      autores: Keeny, Roman, Thomas W. Hertel, Keeny, Roman, Hertel, Thomas
+      doi: https://doi.org/10.22004/ag.econ.283422
+   3. W2142907845  2007  cited_by=165  type=report
+      titulo: Impact of Biofuel Production on World Agricultural Markets: A Computable General Equilibrium Analysis
+      autores: Dileep Birur, Thomas W. Hertel, Wally Tyner
+      doi: https://doi.org/10.21642/gtap.wp53
+   4. W2945779774  2019  cited_by=307  type=article
+      titulo: A linkage between the biophysical and the economic: Assessing the global market impacts of soil erosion
+      autores: Martina Sartori, George Philippidis, Emanuele Ferrari, Pasquale Borrelli et al.
+      doi: https://doi.org/10.1016/j.landusepol.2019.05.014
+   5. W2129517133  2009  cited_by=285  type=article
+      titulo: Climate volatility deepens poverty vulnerability in developing countries
+      autores: S. Amer Ahmed, Noah S. Diffenbaugh, Thomas W. Hertel
+      doi: https://doi.org/10.1088/1748-9326/4/3/034004
+
+====================================================================================================
+[gtap12]  BUSCADO: The GTAP Data Base: Version 12
+              ESPERADO: Aguiar, 2025
+----------------------------------------------------------------------------------------------------
+   1. W2141229371  2002  cited_by=417  type=preprint
+      titulo: GTAP-E: AN ENERGY-ENVIRONMENTAL VERSION OF THE GTAP MODEL
+      autores: Jean-March Burniaux, Truong P. Truong, Burniaux, Jean-March, Truong, Truong P.
+      doi: https://doi.org/10.22004/ag.econ.28705
+   2. W3123830708  2002  cited_by=329  type=report
+      titulo: GTAP-E: An Energy-Environmental Version of the GTAP Model
+      autores: Jean-Marc Burniaux, Truong Truong
+      doi: https://doi.org/10.21642/gtap.tp16
+   3. W7117369847  2025  cited_by=1  type=article
+      titulo: The Global Trade Analysis Project (GTAP) Data Base: Version 12
+      autores: Angel Aguiar, Uris Baldos, Maksym Chepeliev, Erwin Corong et al.
+      doi: https://doi.org/10.21642/jgea.100201af
+   4. W2125727360  1998  cited_by=82  type=preprint
+      titulo: ADJUSTING TAX RATES IN THE GTAP DATA BASE
+      autores: Gerard Malcolm, Malcolm, Gerard
+      doi: https://doi.org/10.22004/ag.econ.28721
+   5. W1501703982  2007  cited_by=61  type=report
+      titulo: Introducing Liquid Biofuels into the GTAP Data Base
+      autores: Farzad Taheripour, Dileep Birur, Thomas W. Hertel, Wally Tyner
+      doi: https://doi.org/10.21642/gtap.rm11
+

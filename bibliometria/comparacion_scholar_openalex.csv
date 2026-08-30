@@ -1,0 +1,15 @@
+obra,openalex_ids,openalex_registros,openalex_citas,scholar_citas,razon_scholar_openalex,nota
+"Global Trade, Assistance, and Production: The GTAP 5 Data Base",W2403987006,1,1122,,,pendiente de captura
+Global Trade Analysis: Modeling and Applications,W1485558032,1,895,5742,6.42,"Scholar agrega ediciones, reimpresiones y capitulos bajo el registro del libro; OpenAlex lista 'Structure of GTAP' (cap. 2) aparte. La razon de un libro es el techo del factor de cobertura, no su valor tipico."
+GTAP-E: An Energy-Environmental Version of the GTAP Model,W2141229371 + W3123830708,2,746,,,pendiente de captura
+An Overview of the GTAP 9 Data Base,W2413227257,1,576,,,pendiente de captura
+The GTAP Data Base: Version 10,W2955545697,1,498,,,pendiente de captura
+"The Standard GTAP Model, Version 7",W2633769093 + W4242531241,2,293,,,pendiente de captura
+Structure of GTAP,W2497463976,1,260,,,pendiente de captura
+GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies,W3121700781 + W1525723848,2,179,,,pendiente de captura
+The GTAP Data Base: Version 11,W4320021891,1,154,,,pendiente de captura
+Dynamic Modeling and Applications for Global Economic Analysis,W1574368972,1,140,,,pendiente de captura
+The GTAP Data Base: Version 12,W7117369847,1,1,,,"1 cita en OpenAlex: demasiado reciente para sostener un cociente. Se captura y se reporta, pero no entra en la mediana."
+"Global Trade, Assistance, and Production: The GTAP 8 Data Base",,0,,,no calculable (OpenAlex no lo indexa),OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos.
+"Global Trade, Assistance, and Production: The GTAP 7 Data Base",,0,,,no calculable (OpenAlex no lo indexa),OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos.
+"Global Trade, Assistance, and Production: The GTAP 6 Data Base",,0,,,no calculable (OpenAlex no lo indexa),OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos.

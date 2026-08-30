@@ -1,0 +1,79 @@
+Global Trade Analysis: Modeling and Applications ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 895    CR None   S2 None  
+Structure of GTAP ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+  OA 260    CR 61     S2 362   
+An Overview of the GTAP 9 Data Base ...
+  OA 576    CR 346    S2 622   
+The GTAP Data Base: Version 10 ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 498    CR 378    S2 None  
+The Standard GTAP Model, Version 7 ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+  OA 166    CR 58     S2 290   
+The Standard GTAP Model: Version 7 (duplicado) ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 127    CR 3      S2 None  
+The GTAP Data Base: Version 11 ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+  OA 154    CR 120    S2 120   
+The GTAP Data Base: Version 12 ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+  OA 1      CR 1      S2 4     
+GTAP-E: An Energy-Environmental Version ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 417    CR None   S2 None  
+GTAP-E (duplicado, Technical Paper 16) ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 329    CR 221    S2 None  
+Dynamic Modeling and Applications ...
+    HTTP 429, espero 3s
+  OA 140    CR 47     S2 73    
+GTAP-AGR ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 149    CR 60     S2 None  
+GTAP-AGR (duplicado) ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 30     CR None   S2 188   
+GTAP 5 Data Base ...
+    HTTP 429, espero 3s
+    HTTP 429, espero 6s
+    HTTP 429, espero 12s
+  OA 1122   CR None   S2 None  

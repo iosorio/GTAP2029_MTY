@@ -1,0 +1,27 @@
+{
+  "fecha_consulta": "2026-08-30",
+  "fuente": "OpenAlex",
+  "corte": 2017,
+  "referencia_externa": {
+    "cifra": 24400,
+    "texto": "24,400+ citations attributed to GTAP research globally",
+    "fuente": "Boletin de GTAP, 2017 (Google Scholar)"
+  },
+  "semilla_ampliada": {
+    "obras": 323,
+    "citas_acervo_actual": 8833,
+    "citas_acervo_2017": 4879,
+    "trabajos_citantes_actual": 5878,
+    "trabajos_citantes_2017": 3392
+  },
+  "ruta_a_14_obras": {
+    "citas_acervo_actual": 4871,
+    "citas_acervo_2017": 2818
+  },
+  "descomposicion_de_la_brecha": {
+    "factor_universo_semilla": 1.73,
+    "factor_cobertura_implicito": 5.0,
+    "brecha_total_vs_ruta_a": 8.66,
+    "nota": "factor_cobertura_implicito es lo que Google Scholar tendria que estar contando de mas, por obra y a igual fecha, para que el 24,400 sea consistente con el conteo de OpenAlex. La Ruta B (Publish or Perish) lo verifica midiendo la razon Scholar/OpenAlex obra por obra."
+  }
+}

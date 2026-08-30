@@ -1,0 +1,296 @@
+{
+  "fecha_proceso": "2026-08-30",
+  "fuentes": {
+    "consultas_guardadas": 1,
+    "csv_exportados": 2,
+    "filas_leidas": 5,
+    "filas_unicas": 3
+  },
+  "denominadores": "derivados de resultados_openalex.json, fusionando los registros que OpenAlex parte en dos",
+  "resumen": {
+    "obras_con_razon": 1,
+    "obras_pendientes": 10,
+    "pendientes": [
+      "gtap5",
+      "gtape",
+      "gtap9",
+      "gtap10",
+      "standard7",
+      "structure",
+      "gtapagr",
+      "gtap11",
+      "dynamic",
+      "gtap12"
+    ],
+    "huecos_pendientes": [
+      "gtap8",
+      "gtap7",
+      "gtap6"
+    ],
+    "filas_duplicadas_entre_vias": 2,
+    "razon_mediana": 6.42,
+    "razon_minima": 6.42,
+    "razon_maxima": 6.42,
+    "advertencia": "Con menos de tres obras medidas la mediana no significa nada. El factor de cobertura sigue SIN verificar: lo que hay es un dato suelto, no una distribucion. Ver 08_protocolo_scholar.md.",
+    "factor_deducido_a_verificar": 5.0
+  },
+  "por_obra": [
+    {
+      "obra": "gtap5",
+      "titulo": "Global Trade, Assistance, and Production: The GTAP 5 Data Base",
+      "openalex": 1122,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W2403987006"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": true,
+      "registros": []
+    },
+    {
+      "obra": "hertel1997",
+      "titulo": "Global Trade Analysis: Modeling and Applications",
+      "openalex": 895,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W1485558032"
+      ],
+      "scholar_mayor": 5742,
+      "scholar_suma": 5742,
+      "scholar_filas": 1,
+      "capturada": true,
+      "es_libro": true,
+      "registros": [
+        {
+          "titulo": "Global trade analysis: modeling and applications",
+          "tipo": "BOOK",
+          "cites": 5742,
+          "anio": "1997",
+          "autores": "TW Hertel",
+          "origen": "PoP001.csv",
+          "via": "csv exportado",
+          "consulta": null,
+          "cites_url": "https://scholar.google.com/scholar?cites=6913937926432472332&as_sdt=2005&sciodt=2007&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 6.42,
+      "openalex_con_capitulo": 1155,
+      "razon_alterna_con_capitulo": 4.97,
+      "advertencia": "Scholar agrega ediciones, reimpresiones y capitulos bajo el registro del libro; OpenAlex lista 'Structure of GTAP' (cap. 2) aparte. La razon de un libro es el techo del factor de cobertura, no su valor tipico."
+    },
+    {
+      "obra": "gtape",
+      "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model",
+      "openalex": 746,
+      "openalex_registros": 2,
+      "openalex_ids": [
+        "W2141229371",
+        "W3123830708"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "gtap9",
+      "titulo": "An Overview of the GTAP 9 Data Base",
+      "openalex": 576,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W2413227257"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "gtap10",
+      "titulo": "The GTAP Data Base: Version 10",
+      "openalex": 498,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W2955545697"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "standard7",
+      "titulo": "The Standard GTAP Model, Version 7",
+      "openalex": 293,
+      "openalex_registros": 2,
+      "openalex_ids": [
+        "W2633769093",
+        "W4242531241"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "structure",
+      "titulo": "Structure of GTAP",
+      "openalex": 260,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W2497463976"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": true,
+      "registros": []
+    },
+    {
+      "obra": "gtapagr",
+      "titulo": "GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies",
+      "openalex": 179,
+      "openalex_registros": 2,
+      "openalex_ids": [
+        "W3121700781",
+        "W1525723848"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "gtap11",
+      "titulo": "The GTAP Data Base: Version 11",
+      "openalex": 154,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W4320021891"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": []
+    },
+    {
+      "obra": "dynamic",
+      "titulo": "Dynamic Modeling and Applications for Global Economic Analysis",
+      "openalex": 140,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W1574368972"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": true,
+      "registros": []
+    },
+    {
+      "obra": "gtap12",
+      "titulo": "The GTAP Data Base: Version 12",
+      "openalex": 1,
+      "openalex_registros": 1,
+      "openalex_ids": [
+        "W7117369847"
+      ],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": [],
+      "advertencia": "1 cita en OpenAlex: demasiado reciente para sostener un cociente. Se captura y se reporta, pero no entra en la mediana."
+    },
+    {
+      "obra": "gtap8",
+      "titulo": "Global Trade, Assistance, and Production: The GTAP 8 Data Base",
+      "openalex": null,
+      "openalex_registros": 0,
+      "openalex_ids": [],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": [],
+      "razon_scholar_sobre_openalex": null,
+      "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
+    },
+    {
+      "obra": "gtap7",
+      "titulo": "Global Trade, Assistance, and Production: The GTAP 7 Data Base",
+      "openalex": null,
+      "openalex_registros": 0,
+      "openalex_ids": [],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": [],
+      "razon_scholar_sobre_openalex": null,
+      "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
+    },
+    {
+      "obra": "gtap6",
+      "titulo": "Global Trade, Assistance, and Production: The GTAP 6 Data Base",
+      "openalex": null,
+      "openalex_registros": 0,
+      "openalex_ids": [],
+      "scholar_mayor": null,
+      "scholar_suma": null,
+      "scholar_filas": 0,
+      "capturada": false,
+      "es_libro": false,
+      "registros": [],
+      "razon_scholar_sobre_openalex": null,
+      "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
+    }
+  ],
+  "descartadas_por_tipo_citation": [
+    {
+      "titulo": "The Standard GTAP Model, version 7. JGEA 2, 1–119",
+      "tipo": "CITATION",
+      "cites": 2,
+      "anio": "2017",
+      "autores": "E Corong, H Thomas, M Robert, M Tsigas, ...",
+      "origen": "9251858FF8FC1276.json",
+      "via": "consulta guardada",
+      "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
+      "cites_url": "https://scholar.google.com/scholar?cites=4845510458296912133&as_sdt=2005&sciodt=2007&hl=en",
+      "motivo": "registro CITATION: Scholar lo fabrica a partir de una referencia suelta; no es la obra y su conteo no sirve"
+    },
+    {
+      "titulo": "The Standard GTAP Model, Version 7. J Glob Econ Anal. 2017; 2 (1): 1–119",
+      "tipo": "CITATION",
+      "cites": 2,
+      "anio": null,
+      "autores": "E Corong, T Hertel, R McDougall, M Tsigas, ...",
+      "origen": "9251858FF8FC1276.json",
+      "via": "consulta guardada",
+      "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
+      "cites_url": "https://scholar.google.com/scholar?cites=1799968842413416687&as_sdt=2005&sciodt=2007&hl=en",
+      "motivo": "registro CITATION: Scholar lo fabrica a partir de una referencia suelta; no es la obra y su conteo no sirve"
+    }
+  ],
+  "sin_clasificar": []
+}

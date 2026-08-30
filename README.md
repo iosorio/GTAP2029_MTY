@@ -49,19 +49,21 @@ universo semilla por 5.00x de cobertura de Google Scholar— están en `bibliome
 
 ## Reproducir el conteo
 
-> **Pendiente:** los scripts viven en la carpeta de trabajo `bibliometria/`, que está fuera de
-> este repositorio, así que quien clone el sitio todavía no puede volver a correr el conteo.
-> Publicarlos aquí es el siguiente paso.
-
-Los scripts que producen las cifras publicadas:
+Los scripts, sus resultados y sus bitácoras están en [`bibliometria/`](bibliometria/),
+junto con el [protocolo de captura en Google Scholar](bibliometria/08_protocolo_scholar.md)
+y el [detalle del método](bibliometria/README.md). Desde `bibliometria/`:
 
 ```bash
 python3 02_conteo_openalex.py      > resultados_openalex.json          # 14 obras canónicas
 python3 05_universo_ampliado.py    > resultados_universo_ampliado.json # 323 obras del corpus
 python3 06_cobertura_fuentes.py    > resultados_cobertura.json         # OpenAlex/Crossref/S2
 python3 07_reconciliacion_2017.py  > resultados_reconciliacion.json    # la brecha de 2017
-python3 09_procesar_pop.py pop_csv/*.csv > resultados_pop.json         # Google Scholar
+python3 09_procesar_pop.py                                             # Google Scholar
 ```
+
+Los cuatro primeros vuelcan JSON a stdout, de ahí la redirección; `09` escribe sus
+archivos por su cuenta. Los `resultados_*.json` publicados aquí son la salida de esa
+misma corrida, para que se pueda comparar sin volver a consultar las APIs.
 
 Sin dependencias externas: sólo biblioteca estándar de Python 3, sin llave de API. `05` y `07`
 tardan varios minutos porque recorren las 323 obras de la semilla una por una.
