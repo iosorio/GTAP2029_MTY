@@ -46,7 +46,9 @@ Tres capas: un núcleo técnico *senior* —quienes desarrollan los modelos que 
 
 **No se requiere aportación financiera.** Purdue confirmó por escrito que GTAP asume la responsabilidad financiera completa y envía a su propio equipo a operar el evento: registro, programa, participantes, presupuesto.
 
-La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que conozca el campus, personal de audio y video, y coordinación en la selección de servicios de alimentos. Los descuentos son bienvenidos pero **opcionales**. El Tec ya tiene anunciada para noviembre de 2027 la reunión **LACEA–LAMES** —el congreso de los economistas de América Latina junto con el encuentro regional de la Econometric Society, la sociedad que publica *Econometrica*—, así que operar un congreso de esta escala no será terreno nuevo.
+La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que conozca el campus, personal de audio y video, y coordinación en la selección de servicios de alimentos. Los descuentos son bienvenidos pero **opcionales**. **Las fechas tienen margen.** Las 28 ediciones presenciales se han celebrado entre el 5 y el 30 de junio, y seis arrancaron el día 20 o después — Kigali 2025, la más reciente, corrió del 25 al 27; Ginebra 2012 y Melbourne 2000, del 27 en adelante. Hay espacio para acomodar el calendario del campus.
+
+El Tecnológico de Monterrey recibirá en noviembre de 2027, en su campus Guadalajara, la reunión anual conjunta **LACEA–LAMES** —el congreso de los economistas de América Latina junto con el encuentro regional de la Econometric Society, la sociedad que publica *Econometrica*—, así que operar un congreso de esta escala no será terreno nuevo para la institución.
 
 ## Por qué conviene al Tec
 
