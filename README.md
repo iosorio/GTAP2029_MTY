@@ -17,7 +17,8 @@ que esté disponible sin engordar el documento que la gente realmente lee.
 
 | | |
 |---|---|
-| `index.html` | La candidatura completa: qué es GTAP, la conferencia, el perfil del asistente, el esquema Tec–UANL, el calendario y las fuentes |
+| `index.html` | La ficha de dos páginas, en pantalla. Mismo texto que el PDF, palabra por palabra |
+| `candidatura.html` | La versión extendida: lo anterior más el historial completo de sedes, las 28 instituciones del consorcio por nombre, las plenarias por año, geografía y centros, y las fuentes |
 | `bibliometria.html` | Método y resultados del conteo bibliométrico |
 | `acerca.html` | Quiénes, en qué estado está el proceso y cómo se verificó cada cifra |
 | `Ficha_GTAP2029_Monterrey.pdf` | La ficha de dos páginas que circula entre directivos |
@@ -25,7 +26,20 @@ que esté disponible sin engordar el documento que la gente realmente lee.
 | `scripts/` | El código que reproduce el conteo y el que genera el PDF |
 | `datos/` | La salida cruda de la consulta a OpenAlex |
 
-Las tres páginas son HTML autocontenido: sin CDN, sin JavaScript, sin dependencias externas.
+Las cuatro páginas son HTML autocontenido: sin CDN, sin JavaScript, sin dependencias externas.
+
+## Qué se edita aquí y qué no
+
+**`index.html`, `candidatura.html`, `Ficha_GTAP2029_Monterrey.md` y
+`Ficha_GTAP2029_Monterrey.pdf` son archivos generados. No se editan a mano:** se
+sobrescriben en la siguiente corrida. Salen todos de un solo archivo maestro,
+`fuente/ficha.md`, que vive en el repositorio de trabajo (`GTAP29`, del que éste
+es submódulo), y se regeneran desde ahí con `python3 construir.py`. Ese mismo
+script reescribe la barra de navegación de `bibliometria.html` y `acerca.html`,
+para que las cuatro páginas ofrezcan siempre el mismo menú en el mismo orden.
+
+Lo que sí se edita a mano aquí es el cuerpo de `bibliometria.html` y `acerca.html`,
+y este README.
 
 ## La cifra principal
 
@@ -71,15 +85,27 @@ tardan varios minutos porque recorren las 323 obras de la semilla una por una.
 `scripts/` en este directorio conserva los sondeos previos con Semantic Scholar (`cite.py`,
 `cite2.py`) y el generador del PDF.
 
-## Regenerar el PDF
+## Regenerar la ficha y las dos páginas que salen de ella
+
+Desde el repositorio de trabajo `GTAP29`, no desde aquí:
 
 ```bash
-python3 scripts/md2pdf.py Ficha_GTAP2029_Monterrey.md 9.8
+python3 construir.py
+```
+
+Regenera las seis salidas, deja el PDF en dos páginas y comprueba de forma
+automática que `index.html` y el PDF digan el mismo texto palabra por palabra.
+Requiere Python 3 y Google Chrome.
+
+`scripts/md2pdf.py` es la copia publicada del conversor que usa ese script. Sirve
+para pasar cualquier `.md` a PDF por su cuenta:
+
+```bash
+python3 scripts/md2pdf.py Ficha_GTAP2029_Monterrey.md 7.9
 ```
 
 El segundo argumento es el tamaño del cuerpo en puntos, y es la perilla para controlar
-cuántas páginas ocupa. El script imprime el número de páginas al terminar. Requiere
-Python 3 y Google Chrome.
+cuántas páginas ocupa. El script imprime el número de páginas al terminar.
 
 ## Estado
 
