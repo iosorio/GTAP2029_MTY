@@ -12,7 +12,8 @@ súbelo si sobra espacio. Imprime el número de páginas al terminar.
 
 Construcciones soportadas: `#`, `##`, `###`, `---`, tablas con `|`,
 listas con `- `, párrafos, `**negrita**`, `*cursiva*`, `[enlace](url)`, y el
-recuadro `:::nombre … :::` (nombres usados: `resumen`, `key`). No hay soporte
+recuadro `:::nombre … :::` (nombres usados: `resumen`, `key`) y el salto de
+línea explícito `<br>`, que sirve para partir una etiqueta de tabla. No hay soporte
 para citas ni listas anidadas. Al tocar el parser, correr antes y después:
 
     python3 md2pdf.py fuente/prueba_parser.md
@@ -58,6 +59,7 @@ hr {{ border:none; border-top:0.8pt solid #0f2b46; margin:3mm 0 2.6mm; }}
 strong {{ color:#0f2b46; }}
 a {{ color:#1a4f7a; text-decoration:none; }}
 em {{ color:#5b6470; }}
+.resumen td:first-child {{ width:21%; }}
 .resumen, .key {{ background:#f4f6f8; border-left:2.2pt solid #0f2b46;
                   padding:1.5mm 2.4mm 0.4mm; margin:0 0 2.6mm; }}
 .resumen > :last-child, .key > :last-child {{ margin-bottom:0; }}
@@ -67,6 +69,7 @@ em {{ color:#5b6470; }}
 
 def inline(t):
     t = html.escape(t)
+    t = t.replace('&lt;br&gt;', '<br>')      # único salto de línea explícito
     t = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', t)
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', r'<em>\1</em>', t)
