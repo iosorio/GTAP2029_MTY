@@ -406,7 +406,8 @@ def main():
         if razones_sin_libro:
             e.write("  sin libros (%d obras): mediana %s\n"
                     % (len(razones_sin_libro), mediana(razones_sin_libro)))
-        e.write("  contra el 5.00x deducido por residuo en 07_reconciliacion_2017.py\n")
+        e.write("  el 5.00x que se deducia por residuo queda refutado; ver\n"
+                "  07_reconciliacion_2017.py y 08_protocolo_scholar.md\n")
     else:
         e.write("todavia no hay ninguna razon calculable\n")
     if huecos:
