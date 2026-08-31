@@ -30,7 +30,7 @@ Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, O
 
 | **Participantes** | Alrededor de 225. Es la cifra con la que Purdue University presupuesta y dimensiona sedes. |
 | **Duración** | Una semana: tres días de conferencia, más la sesión del consejo del consorcio y actividades previas. |
-| **Perfil** | Es un congreso de modelación aplicada a política pública, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
+| **Perfil** | Es un congreso de modelación aplicada, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
 | **Sedes recientes** | Cartagena 2018, Varsovia 2019, Burdeos 2023, Fort Collins 2024, Kigali 2025, Kioto 2026. |
 
 **América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **las sedes de 2027 (Montreal) y 2028 (Bruselas) ya están asignadas: 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria de enero.
@@ -49,7 +49,7 @@ El público se reparte en tres capas: un núcleo técnico *senior*, formado en g
 
 **No se requiere aportación financiera.** Purdue University confirmó por escrito que GTAP asume la responsabilidad financiera completa y envía a su propio equipo a operar el evento: registro, programa, participantes, presupuesto.
 
-La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que conozca el lugar (campus o centro de convenciones), personal de audio y video, y coordinación en la selección de servicios de alimentos. Los descuentos son bienvenidos pero **opcionales**. **Las fechas tienen margen.** Las 28 ediciones presenciales se han celebrado entre el 5 y el 30 de junio, y seis arrancaron el día 20 o después: Kigali 2025, la más reciente, corrió del 25 al 27, y Ginebra 2012 y Melbourne 2000, del 27 en adelante.
+La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que conozca el lugar (campus o centro de convenciones), personal de audio y video, y coordinación en la selección de servicios de alimentos. Los descuentos son bienvenidos pero **opcionales**. **Las fechas tienen margen.** Las 28 ediciones presenciales se han celebrado entre el 5 y el 30 de junio.
 
 ## ¿Por qué conviene al Tec?
 
