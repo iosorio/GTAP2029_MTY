@@ -10,6 +10,13 @@ El segundo argumento es el tamaño del cuerpo de texto en puntos (default 8.3).
 Es la perilla para ajustar cuántas páginas ocupa: bájalo si se desborda,
 súbelo si sobra espacio. Imprime el número de páginas al terminar.
 
+Construcciones soportadas: `#`, `##`, `###`, `---`, tablas con `|`,
+listas con `- `, párrafos, `**negrita**`, `*cursiva*`, `[enlace](url)`, y el
+recuadro `:::nombre … :::` (nombres usados: `resumen`, `key`). No hay soporte
+para citas ni listas anidadas. Al tocar el parser, correr antes y después:
+
+    python3 md2pdf.py fuente/prueba_parser.md
+
 No requiere instalar nada: solo Python 3 (viene con macOS) y Google Chrome.
 """
 import html, os, re, subprocess, sys, shutil
@@ -37,6 +44,8 @@ h1 + p {{ font-family:Helvetica,Arial,sans-serif; font-size:7.8pt; color:#5b6470
           margin:0 0 2.4mm; }}
 h2 {{ font-family:Helvetica,Arial,sans-serif; font-size:9.2pt; color:#0f2b46;
       margin:3.4mm 0 1.2mm; padding-bottom:0.6mm; border-bottom:0.6pt solid #c9d2dc; }}
+h3 {{ font-family:Helvetica,Arial,sans-serif; font-size:8.4pt; color:#0f2b46;
+      margin:2.6mm 0 1mm; }}
 p {{ margin:0 0 1.6mm; text-align:justify; hyphens:auto; }}
 ul {{ margin:0 0 1.7mm; padding-left:4mm; }}
 li {{ margin-bottom:0.9mm; text-align:justify; }}
@@ -49,6 +58,10 @@ hr {{ border:none; border-top:0.8pt solid #0f2b46; margin:3mm 0 2.6mm; }}
 strong {{ color:#0f2b46; }}
 a {{ color:#1a4f7a; text-decoration:none; }}
 em {{ color:#5b6470; }}
+.resumen, .key {{ background:#f4f6f8; border-left:2.2pt solid #0f2b46;
+                  padding:1.5mm 2.4mm 0.4mm; margin:0 0 2.6mm; }}
+.resumen > :last-child, .key > :last-child {{ margin-bottom:0; }}
+.resumen tr:last-child td, .key tr:last-child td {{ border-bottom:none; }}
 """
 
 
@@ -66,10 +79,19 @@ def md_to_html(md):
         ln = lines[i]
         if ln.startswith('# '):
             out.append(f'<h1>{inline(ln[2:])}</h1>'); i += 1
+        elif ln.startswith('### '):
+            out.append(f'<h3>{inline(ln[4:])}</h3>'); i += 1
         elif ln.startswith('## '):
             out.append(f'<h2>{inline(ln[3:])}</h2>'); i += 1
         elif ln.strip() == '---':
             out.append('<hr>'); i += 1
+        elif ln.startswith(':::'):
+            cls, i = ln[3:].strip() or 'key', i + 1
+            buf = []
+            while i < len(lines) and lines[i].strip() != ':::':
+                buf.append(lines[i]); i += 1
+            i += 1                                   # consume el ::: de cierre
+            out.append(f'<div class="{cls}">' + md_to_html('\n'.join(buf)) + '</div>')
         elif ln.startswith('|'):
             rows = []
             while i < len(lines) and lines[i].startswith('|'):
@@ -90,7 +112,7 @@ def md_to_html(md):
         else:
             buf = []
             while (i < len(lines) and lines[i].strip()
-                   and not lines[i].startswith(('#', '|', '- ', '---'))):
+                   and not lines[i].startswith(('#', '|', '- ', '---', ':::'))):
                 buf.append(lines[i]); i += 1
             out.append('<p>' + inline(' '.join(buf)) + '</p>')
     return ''.join(out)
