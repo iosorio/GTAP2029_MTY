@@ -30,7 +30,7 @@ Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, O
 
 | **Participantes** | Alrededor de 225. Es la cifra con la que Purdue University presupuesta y dimensiona sedes. |
 | **Duración** | Una semana: tres días de conferencia, más la sesión del consejo del consorcio y actividades previas. |
-| **Perfil** | Es un congreso de modelación aplicada a política pública, no una conferencia convencional de política pública. Kioto 2026 tuvo 51 sesiones, en las que se presentaron [FALTA: número de ponencias en Kioto 2026] trabajos de investigación. |
+| **Perfil** | Es un congreso de modelación aplicada a política pública, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
 | **Sedes recientes** | Cartagena 2018, Varsovia 2019, Burdeos 2023, Fort Collins 2024, Kigali 2025, Kioto 2026. |
 
 **América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **las sedes de 2027 (Montreal) y 2028 (Bruselas) ya están asignadas: 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria de enero.
