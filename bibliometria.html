@@ -78,23 +78,47 @@ trabajos académicos distintos citan la producción del Global Trade Analysis Pr
 <p class="note"><strong>Lo que la semilla no incluye:</strong> los conference papers de las 28 conferencias anuales, que el repositorio de GTAP aloja pero OpenAlex no agrupa como serie. Son varios miles de documentos, en su mayoría sin DOI y muchos publicados después en revistas, donde sí quedan contados. Por eso 323 es un piso del catálogo, aunque cubre toda la producción editorial formal del proyecto.</p>
 
 <h2>La brecha con la cifra de 2017</h2>
-<p>El boletín de GTAP de 2017 reporta <strong>«24,400+ citations attributed to GTAP research globally»</strong>, medidas en Google Scholar. Comparada de frente contra las 4,864 citas a 14 obras, la brecha es de cinco veces y quedaba sin explicar.</p>
+<p>El boletín de GTAP de 2017 reporta <strong>«24,400+ citations attributed to GTAP research globally»</strong>, medidas en Google Scholar. Comparada de frente contra las 4,864 citas a 14 obras, la brecha es de cinco veces.</p>
 <p>La comparación de frente es inválida por dos razones, y ambas se corrigen con medición en vez de con supuestos. <strong>La fecha:</strong> el 24,400 es el acervo de 2017 y el conteo propio es el de 2026; recortando el conteo propio a citas emitidas hasta 2017, obra por obra sobre las 323, quedan 4,879 citas a la semilla completa y 2,818 a las 14 obras. <strong>El universo:</strong> «GTAP research globally» no son 14 obras metodológicas, es el corpus del proyecto.</p>
-<p>Con ambas cosas igualadas, la brecha se descompone así:</p>
+<p>Corregidas las dos, quedan 4,879 citas frente a 24,400: <strong>una brecha de 5.00x todavía por explicar.</strong></p>
+
+<h3>La hipótesis que se probó, y falló</h3>
+<p>La explicación natural es la cobertura. Scholar indexa tesis, working papers, informes de organismos y literatura gris que OpenAlex no cubre, así que debería encontrar más citas <strong>de las mismas obras</strong>. Si ese factor fuera de 5.00x, la brecha cerraría exactamente.</p>
+<p>Durante meses ese 5.00x se reportó como si fuera una propiedad medida de Scholar. No lo era: era el <strong>residuo</strong> de despejar la ecuación. El 31 de agosto de 2026 se midió, obra por obra, con Publish or Perish operado a mano.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Obra</th><th class="num">OpenAlex</th><th class="num">Scholar</th><th class="num">Razón</th></tr></thead>
+<tbody>
+<tr><td>Global Trade Analysis: Modeling and Applications <em>(libro, 1997)</em></td><td class="num">895</td><td class="num">5,749</td><td class="num">6.42x</td></tr>
+<tr><td>Structure of GTAP <em>(capítulo)</em></td><td class="num">260</td><td class="num">767</td><td class="num">2.95x</td></tr>
+<tr><td>The GTAP Data Base: Version 11</td><td class="num">154</td><td class="num">344</td><td class="num">2.23x</td></tr>
+<tr><td>The Standard GTAP Model, Version 7</td><td class="num">293</td><td class="num">625</td><td class="num">2.13x</td></tr>
+<tr><td>The GTAP Data Base: Version 10</td><td class="num">498</td><td class="num">942</td><td class="num">1.89x</td></tr>
+<tr><td>An Overview of the GTAP 9 Data Base</td><td class="num">576</td><td class="num">995</td><td class="num">1.73x</td></tr>
+<tr><td>Global Trade, Assistance and Production: GTAP 5</td><td class="num">1,122</td><td class="num">1,618</td><td class="num">1.44x</td></tr>
+<tr><td>Dynamic Modeling and Applications <em>(libro)</em></td><td class="num">140</td><td class="num">202</td><td class="num">1.44x</td></tr>
+<tr><td>GTAP-AGR</td><td class="num">179</td><td class="num">222</td><td class="num">1.24x</td></tr>
+<tr><td>GTAP-E</td><td class="num">746</td><td class="num">875</td><td class="num">1.17x</td></tr>
+</tbody></table></div>
+<p><strong>Mediana 1.81x. Rango 1.17x–6.42x.</strong> El extremo alto es el libro de Hertel, el caso conocido en que Scholar agrupa ediciones, reimpresiones y capítulos bajo un solo registro; contra la suma de libro más capítulo la razón baja a 4.98x, y sin libros el máximo del rango es 2.95x. Los cuatro artículos del <em>Journal of Global Economic Analysis</em> —la medición más limpia, porque no hay ediciones que agregar— caen todos entre <strong>1.73x y 2.23x</strong>. No es una dispersión caótica: es un factor consistente de alrededor de <strong>2x</strong>.</p>
+
+<h3>La descomposición corregida</h3>
 <div class="tablewrap"><table>
 <thead><tr><th>Paso</th><th class="num">Factor</th><th class="num">Cantidad</th></tr></thead>
 <tbody>
 <tr><td>Citas a 14 obras, acervo 2017 (OpenAlex)</td><td class="num">—</td><td class="num">2,818</td></tr>
-<tr><td>× ampliación del universo semilla a 323 obras</td><td class="num"><strong>1.73x</strong></td><td class="num">4,879</td></tr>
-<tr><td>× cobertura de Google Scholar sobre OpenAlex</td><td class="num"><strong>5.00x</strong></td><td class="num"><strong>24,400</strong></td></tr>
-<tr><td><strong>Brecha total</strong></td><td class="num"><strong>8.66x</strong></td><td class="num"></td></tr>
+<tr><td>× ampliación del universo semilla a 323 obras — <strong>medido</strong></td><td class="num"><strong>1.73x</strong></td><td class="num">4,879</td></tr>
+<tr><td>× cobertura de Google Scholar sobre OpenAlex — <strong>medido</strong></td><td class="num"><strong>1.81x</strong></td><td class="num">8,824</td></tr>
+<tr><td>Cifra del boletín de GTAP, 2017</td><td class="num"></td><td class="num"><strong>24,400</strong></td></tr>
+<tr><td><strong>Sin explicar</strong></td><td class="num"><strong>2.77x</strong></td><td class="num"></td></tr>
 </tbody></table></div>
-<p>El factor de cobertura de 5.00x es el residuo: lo que Scholar tendría que estar contando de más, a igual fecha y sobre el mismo universo, para que su cifra sea consistente con la de OpenAlex. Cae en el borde superior del rango de 3x a 5x que la literatura bibliométrica reporta para Google Scholar frente a índices académicos con emparejamiento de referencias.</p>
+<p><strong>La cobertura explica bastante menos de lo que se le atribuía, y la brecha no cierra.</strong> Ese es el resultado, y se reporta tal cual.</p>
 
 <div class="key warn">
-<p><strong>Verificación parcial, y hasta dónde llega.</strong> De las obras canónicas hay hoy una sola medición directa en Scholar: el libro de Hertel de 1997 tiene <strong>5,742 citas</strong> en Scholar contra 895 en OpenAlex, una razón de <strong>6.42x</strong>. Scholar agrupa bajo el registro del libro sus ediciones, reimpresiones y capítulos, mientras OpenAlex lista el capítulo 2 aparte con 260 citas propias; comparando contra la suma de ambos, la razón es de <strong>4.97x</strong>.</p>
-<p>Ese 4.97x medido y el 5.00x implícito coinciden casi exactamente, lo que es una corroboración fuerte. Pero <strong>es un solo punto</strong>: una obra, y además un libro, que es el caso donde Scholar más agrega. La brecha está explicada de forma consistente y cuantificada; no verificada de forma independiente.</p>
+<p><strong>Qué quiere decir.</strong> La ventaja de Google Scholar no está en contar más citas de una misma obra —sólo alrededor del doble— sino en contar citas de muchas más obras. La brecha frente al 24,400 es <strong>de universo, no de cobertura</strong>.</p>
+<p>Es coherente con lo que ya se sabía del catálogo: la semilla de 323 obras cubre toda la producción editorial formal del proyecto, pero no los conference papers de las 28 conferencias anuales —varios miles de documentos que OpenAlex no agrupa como serie—. Esa es la hipótesis principal para el 2.77x restante, y <strong>queda dicha como hipótesis, porque no está medida</strong>. Sería fácil escribir que el factor de universo es de 4.78x y hacer que todo cuadre otra vez; sería la misma circularidad que acaba de fallar, movida de lugar.</p>
 </div>
+
+<p><strong>Dos efectos colaterales que sí ayudan.</strong> Si Scholar sólo encuentra alrededor de 1.8x más citas por obra, OpenAlex no está subcontando de forma dramática: los 5,878 trabajos citantes son un piso más sólido de lo que se suponía cuando se creía que Scholar veía cinco veces más. Y el hueco de los volúmenes GTAP 6, 7 y 8 —que OpenAlex no indexa y este conteo registra como cero— queda dimensionado en <strong>1,672 citas</strong> en Scholar: 1,561 del volumen 7, y 59 y 52 de los volúmenes 6 y 8, cifras implausiblemente bajas para su uso y casi con seguridad fragmentadas, así que ese 1,672 es a su vez un piso.</p>
 
 <h2>Robustez del dato mexicano</h2>
 <p>Si el conteo dependiera de la definición del universo, no serviría para sostener nada. La prueba es medir la participación mexicana en universos con coberturas distintas y ver si el porcentaje se mueve.</p>

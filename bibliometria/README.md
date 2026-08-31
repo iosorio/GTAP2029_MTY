@@ -77,17 +77,24 @@ El boletín de GTAP de 2017 reporta «24,400+ citations attributed to GTAP
 research globally», medido en Google Scholar. `07_reconciliacion_2017.py`
 reconstruye el acervo tal como estaba en 2017 y descompone la brecha:
 
-| | |
-|---|---:|
-| Ruta A a 2017 | 2,818 citas |
-| Semilla ampliada a 2017 | 4,879 citas |
-| Factor de universo semilla | **1.73x** ← medido |
-| Factor de cobertura implícito | **5.00x** ← deducido por residuo |
-| Brecha total | **8.66x** → 2,818 × 8.66 ≈ 24,400 |
+| | | |
+|---|---:|---|
+| Ruta A a 2017 | 2,818 citas | |
+| × universo semilla a 323 obras | **1.73x** | 4,879 — **medido** |
+| × cobertura de Google Scholar | **1.81x** | 8,824 — **medido** (Ruta B) |
+| Cifra del boletín de GTAP, 2017 | 24,400 | |
+| **Sin explicar** | **2.77x** | |
 
-**El 1.73x está medido sobre OpenAlex. El 5.00x no:** es lo que Scholar tendría
-que estar contando de más para que el 24,400 cuadre. Verificarlo es la Ruta B, y
-es lo único que sigue abierto.
+**La brecha no cierra, y así se reporta.** Hasta el 31 de agosto de 2026 el
+factor de cobertura se daba por 5.00x, que era el residuo de despejar la
+ecuación; al medirlo obra por obra resultó casi tres veces menor.
+
+La lectura que sí aguanta: **la ventaja de Scholar no está en contar más citas de
+una misma obra —sólo alrededor del doble— sino en contar citas de muchas más
+obras.** La brecha es de universo, no de cobertura. La hipótesis principal para
+el 2.77x restante son los conference papers de las 28 conferencias anuales, que
+OpenAlex no agrupa como serie y la semilla no cubre; queda escrita como
+hipótesis, sin medir. No se sustituye un residuo deducido por otro.
 
 ## Cobertura entre bases (`06_cobertura_fuentes.py`)
 
@@ -98,23 +105,48 @@ de obras:
 |---|---:|---:|
 | OpenAlex / Crossref | 10 | 1.85x |
 | OpenAlex / Semantic Scholar | 7 | 0.80 |
+| **Google Scholar / OpenAlex** | **10** | **1.81x** |
 
-OpenAlex es más ancho que Crossref y algo más angosto que Semantic Scholar.
-Las tres son índices académicos con emparejamiento de referencias: su dispersión
-acota el componente de **emparejamiento**, no el de literatura gris que Scholar
-indexa y ellas no.
+OpenAlex es más ancho que Crossref y algo más angosto que Semantic Scholar. La
+dispersión entre índices académicos va de 0.8x a 1.9x — y Google Scholar, medido
+sobre las mismas obras, cae en 1.81x.
 
-## Ruta B — abierta, 1 de 11
+**Scholar no juega en otra liga cuando se mide obra por obra.** Ésa es
+exactamente la razón por la que la brecha de 2017 no puede atribuirse a la
+cobertura.
 
-Verifica el 5.00x deducido midiendo la razón Scholar/OpenAlex obra por obra, con
-Publish or Perish operado a mano. **El protocolo completo, con la hoja de
-captura y las trampas del método, está en [`08_protocolo_scholar.md`](08_protocolo_scholar.md).**
+## Ruta B — cerrada, 13 de 13
 
-Lo único medido hasta hoy: *Global Trade Analysis: Modeling and Applications*
-(Hertel, 1997) — OpenAlex 895, Scholar 5,742, razón **6.42x**, o **4.97x** si se
-compara contra libro + capítulo. Bordea el 5.00x por arriba, pero **una obra no
-es una distribución**: cuando estén las diez se reporta mediana y rango, no
-promedio.
+Verificó el 5.00x deducido midiendo la razón Scholar/OpenAlex obra por obra, con
+Publish or Perish operado a mano sobre la MacPro el 31 de agosto de 2026. **El
+protocolo, con la hoja de captura y las trampas del método, está en
+[`08_protocolo_scholar.md`](08_protocolo_scholar.md).**
+
+| Obra | OpenAlex | Scholar | Razón |
+|---|---:|---:|---:|
+| Global Trade Analysis: Modeling and Applications *(libro)* | 895 | 5,749 | 6.42x |
+| Structure of GTAP *(capítulo)* | 260 | 767 | 2.95x |
+| The GTAP Data Base: Version 11 | 154 | 344 | 2.23x |
+| The Standard GTAP Model, Version 7 | 293 | 625 | 2.13x |
+| The GTAP Data Base: Version 10 | 498 | 942 | 1.89x |
+| An Overview of the GTAP 9 Data Base | 576 | 995 | 1.73x |
+| GTAP 5 Data Base | 1,122 | 1,618 | 1.44x |
+| Dynamic Modeling and Applications *(libro)* | 140 | 202 | 1.44x |
+| GTAP-AGR | 179 | 222 | 1.24x |
+| GTAP-E | 746 | 875 | 1.17x |
+
+**Mediana 1.81x, rango 1.17x–6.42x.** Se reporta mediana y rango, no promedio:
+el extremo alto es el libro de Hertel, donde Scholar agrupa ediciones y
+capítulos bajo un registro. Los cuatro artículos de JGEA —la medición limpia—
+caen entre 1.73x y 2.23x. *Version 12* (1 cita en OpenAlex, 0 resultados en
+Scholar) es demasiado reciente y queda fuera del cálculo.
+
+**Bloque B, los tres volúmenes que OpenAlex no indexa.** No producen razón: sin
+denominador no hay cociente. Miden el hueco en términos absolutos — **1,672
+citas en Scholar** que este conteo registra como cero: 1,561 del volumen 7, y 59
+y 52 de los volúmenes 6 y 8. Esas dos últimas son implausiblemente bajas para su
+uso y casi con seguridad reflejan fragmentación en clusters que la consulta por
+título no alcanzó, así que el 1,672 es a su vez un piso.
 
 Restricción vigente: **Publish or Perish sí, scrapers de Google Scholar no.**
 `scholar.google.com/robots.txt` prohíbe el rastreo automatizado; la herramienta
@@ -160,16 +192,19 @@ no se escriben a mano.
 - **OpenAlex no indexa los volúmenes GTAP 6, 7 y 8** como obras, solo capítulos
   sueltos que casi no se citan. Son los de mayor uso entre 2006 y 2016 y sus
   citas no están en la unión. El volumen GTAP 5 sí está indexado (1,122 citas) y
-  se incluyó. Dimensionar ese hueco es el Bloque B de `08_protocolo_scholar.md`.
+  se incluyó. En Google Scholar los tres suman **1,672 citas**, y esa cifra es a
+  su vez un piso: ver el Bloque B de `08_protocolo_scholar.md`.
 - **Referencias no resueltas.** OpenAlex descarta las referencias que no logra
   emparejar con una obra de su índice.
 - **Afiliación institucional incompleta.** El desglose por país solo cubre los
   trabajos cuya afiliación OpenAlex resuelve: 4,571 de 5,878. Los cortes
   regionales también son un piso.
 - **Cobertura frente a Google Scholar.** Scholar indexa tesis, working papers,
-  informes de organismos y literatura gris que OpenAlex no cubre. Por eso la
-  Ruta B mide más alto: mide otra cosa, con otra cobertura. Las dos cifras se
-  reportan por separado con su fuente.
+  informes de organismos y literatura gris que OpenAlex no cubre. Medida obra
+  por obra, esa ventaja es de **1.81x** —mediana sobre diez obras, rango 1.17x a
+  6.42x—: real, pero mucho menor que el 3x a 5x que suele reportar la literatura
+  bibliométrica. Es otra cobertura, no una corrección: las dos cifras se reportan
+  por separado con su fuente y nunca se promedian.
 - **Presupuesto de las APIs.** OpenAlex tiene cuota diaria por IP que se
   reinicia a medianoche UTC. Semantic Scholar limita la tasa y devuelve 429 con
   descargas grandes.

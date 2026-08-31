@@ -1,37 +1,26 @@
 {
-  "fecha_proceso": "2026-08-30",
+  "fecha_proceso": "2026-08-31",
   "fuentes": {
-    "consultas_guardadas": 1,
+    "consultas_guardadas": 18,
     "csv_exportados": 2,
-    "filas_leidas": 5,
-    "filas_unicas": 3
+    "filas_leidas": 87,
+    "filas_unicas": 79
   },
   "denominadores": "derivados de resultados_openalex.json, fusionando los registros que OpenAlex parte en dos",
   "resumen": {
-    "obras_con_razon": 1,
-    "obras_pendientes": 10,
+    "obras_con_razon": 10,
+    "obras_pendientes": 1,
     "pendientes": [
-      "gtap5",
-      "gtape",
-      "gtap9",
-      "gtap10",
-      "standard7",
-      "structure",
-      "gtapagr",
-      "gtap11",
-      "dynamic",
       "gtap12"
     ],
-    "huecos_pendientes": [
-      "gtap8",
-      "gtap7",
-      "gtap6"
-    ],
-    "filas_duplicadas_entre_vias": 2,
-    "razon_mediana": 6.42,
-    "razon_minima": 6.42,
+    "huecos_pendientes": [],
+    "filas_duplicadas_entre_vias": 8,
+    "razon_mediana": 1.81,
+    "razon_minima": 1.17,
     "razon_maxima": 6.42,
-    "advertencia": "Con menos de tres obras medidas la mediana no significa nada. El factor de cobertura sigue SIN verificar: lo que hay es un dato suelto, no una distribucion. Ver 08_protocolo_scholar.md.",
+    "razon_mediana_sin_libros": 1.81,
+    "obras_sin_libro": 6,
+    "citas_scholar_en_los_huecos": 1672,
     "factor_deducido_a_verificar": 5.0
   },
   "por_obra": [
@@ -43,12 +32,28 @@
       "openalex_ids": [
         "W2403987006"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 1618,
+      "scholar_suma": 1618,
+      "scholar_origen": "cluster CITATION: Scholar no tiene el documento indexado",
+      "scholar_registros_indexados": 0,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 1,
+      "capturada": true,
       "es_libro": true,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "Global Trade, Assistance and Production: The GTAP5 Database",
+          "tipo": "CITATION",
+          "cites": 1618,
+          "anio": "2002",
+          "autores": "D BV",
+          "origen": "5C3AC2AAE98AA4EF.json",
+          "via": "consulta guardada",
+          "consulta": "\"Global Trade, Assistance, and Production: The GTAP 5 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=9899018668390092369&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.44
     },
     {
       "obra": "hertel1997",
@@ -58,8 +63,11 @@
       "openalex_ids": [
         "W1485558032"
       ],
-      "scholar_mayor": 5742,
-      "scholar_suma": 5742,
+      "scholar_mayor": 5749,
+      "scholar_suma": 5749,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 0,
       "scholar_filas": 1,
       "capturada": true,
       "es_libro": true,
@@ -67,18 +75,18 @@
         {
           "titulo": "Global trade analysis: modeling and applications",
           "tipo": "BOOK",
-          "cites": 5742,
+          "cites": 5749,
           "anio": "1997",
           "autores": "TW Hertel",
-          "origen": "PoP001.csv",
-          "via": "csv exportado",
-          "consulta": null,
-          "cites_url": "https://scholar.google.com/scholar?cites=6913937926432472332&as_sdt=2005&sciodt=2007&hl=en"
+          "origen": "0861FC4B5C6C7DB8.json",
+          "via": "consulta guardada",
+          "consulta": "\"Global Trade Analysis: Modeling and Applications\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=6913937926432472332&as_sdt=2005&sciodt=0,5&hl=en"
         }
       ],
       "razon_scholar_sobre_openalex": 6.42,
       "openalex_con_capitulo": 1155,
-      "razon_alterna_con_capitulo": 4.97,
+      "razon_alterna_con_capitulo": 4.98,
       "advertencia": "Scholar agrega ediciones, reimpresiones y capitulos bajo el registro del libro; OpenAlex lista 'Structure of GTAP' (cap. 2) aparte. La razon de un libro es el techo del factor de cobertura, no su valor tipico."
     },
     {
@@ -90,12 +98,294 @@
         "W2141229371",
         "W3123830708"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 875,
+      "scholar_suma": 1140,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 24,
+      "scholar_filas": 25,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model",
+          "tipo": "PDF",
+          "cites": 875,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=11738685190855046046&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model. GTAP technical paper no. 16",
+          "tipo": "CITATION",
+          "cites": 183,
+          "anio": "2002",
+          "autores": "JM Burniaux, T Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3894006064673405784&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An energy-environmental version of the GTAP model (GTAP Technical Paper No. 16). Purdue University",
+          "tipo": "CITATION",
+          "cites": 6,
+          "anio": "2002",
+          "autores": "J Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=13659783799047157234&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model, GTAP technical paper No. 16 (revised)",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=6714109028432250495&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model (GTAP Technical Paper No. 16). Purdue University, West Lafayette, IN: Global Trade …",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "J Burniaux, T Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=11538578230402070511&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An energy-environmental version of the GTAP model (GTAP Technical Paper No. 16) Center for Global Trade Analysis",
+          "tipo": "CITATION",
+          "cites": 4,
+          "anio": "2002",
+          "autores": "J Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10211369315921559115&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Truong (2002)'GTAP-E: An Energy-Environmental Version of the GTAP Model'",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "JM Burniaux",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=15657488616108775176&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy Environmental Version of the GTAP Model with Emissions",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8836237367442267180&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model [Electronic resource]/J",
+          "tipo": "CITATION",
+          "cites": 5,
+          "anio": "2002",
+          "autores": "JM Burniax",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=2678553186566649615&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model. GTAP Technical Paper, No. 16. Revised Version. Convention on Biological Diversity CBD …",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8695617168718394954&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model, 2002",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=4236889256196245852&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Gtap-e: An energy-environmental version of the gtap model, GTAP Technical Papers 923",
+          "tipo": "CITATION",
+          "cites": 21,
+          "anio": "2002",
+          "autores": "JM Burniaux, T Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8091662274990357873&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An energy-environmental version of the GTAP Model",
+          "tipo": "CITATION",
+          "cites": 4,
+          "anio": "2001",
+          "autores": "B Jean-Marc, PT Troung",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10114276648211853570&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model. Purdue University",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=5741428551301529257&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An energy-environmental version of the GTAP model. Report",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=16966823104883791270&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An energy-environmental version of the GTAP model, GTAP Tech",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=17747295643717225529&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy—Environmental Version of the GTAP Model, GTAP Technical Paper No. 1, 2002",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=12391831937953820567&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP Model, GTAP Technical Paper No. 16 (January 2002)",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=12297576881516995150&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model GTAP-E: An Energy-Environmental Version of the GTAP Model",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "J Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8201625550233426950&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model'. GTAP Technical Papers, Paper 18. West Lafayette: Purdue University",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=4412817761167743575&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model, GTAP Technical Paper 16 (revised), January 2002",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2002",
+          "autores": "JM Burniaux, TP Truong",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=18346348485210600305&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: an energy-environmental version of the GTAP model",
+          "tipo": "CITATION",
+          "cites": 1,
+          "anio": "2002",
+          "autores": "IN West Lafayette",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10567520554692083389&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model. GTAP Research Article# 16",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2002",
+          "autores": "JM BURNIAUX, T TRUONG",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=769500837603641709&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "y TP Truong. 2002. GTAP-E: An Energy-Environmental Version of the GTAP Model. GTAP Technical Paper No. 16",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "JM Burniaux",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=17123288841408217126&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading; Number 668 in DIW Discussion Papers, Deutsches Institut für …",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "TP Truong, C Kemfert, JM Burniaux",
+          "origen": "EC65C584E4BB5611.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3596520318890507215&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.17,
+      "razon_sobre_suma_fusionada": 1.53,
+      "advertencia": "Scholar tambien lista una revision de 2007 (Truong, Kemfert, Burniaux) que OpenAlex no separa; queda excluida por anio. Es la obra con el emparejamiento mas sucio de las once."
     },
     {
       "obra": "gtap9",
@@ -105,12 +395,73 @@
       "openalex_ids": [
         "W2413227257"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 995,
+      "scholar_suma": 1006,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 4,
+      "scholar_filas": 5,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "An overview of the GTAP 9 data base",
+          "tipo": null,
+          "cites": 995,
+          "anio": "2016",
+          "autores": "A Aguiar, B Narayanan, R McDougall",
+          "origen": "460CFF2D0467C42F.json",
+          "via": "consulta guardada",
+          "consulta": "\"An Overview of the GTAP 9 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=16903788297454047431&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "An overview of the GTAP 9 data base. J Glob Econ Anal 1: 181–208",
+          "tipo": "CITATION",
+          "cites": 5,
+          "anio": "2016",
+          "autores": "A Aguiar, B Narayanan, R McDougall",
+          "origen": "460CFF2D0467C42F.json",
+          "via": "consulta guardada",
+          "consulta": "\"An Overview of the GTAP 9 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3359523985632116776&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "An overview of the gtap 9 data base",
+          "tipo": "CITATION",
+          "cites": 1,
+          "anio": "2016",
+          "autores": "B Narayanan, A Aguiar, R McDougall",
+          "origen": "460CFF2D0467C42F.json",
+          "via": "consulta guardada",
+          "consulta": "\"An Overview of the GTAP 9 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=18345181567455184096&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "An Overview of the GTAP 9 Data Base. J Global Econ Analy. 1 (1): 181–208",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2016",
+          "autores": "A Aguiar, B Narayanan, R McDougall",
+          "origen": "460CFF2D0467C42F.json",
+          "via": "consulta guardada",
+          "consulta": "\"An Overview of the GTAP 9 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=15662092628228567524&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "An overview of the GTAP 9 Data Base. J Glob Econ Anal. 2016; 1 (1): 181–208",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "A Aguiar, B Narayanan, R McDougall",
+          "origen": "460CFF2D0467C42F.json",
+          "via": "consulta guardada",
+          "consulta": "\"An Overview of the GTAP 9 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=511370547019463574&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.73,
+      "razon_sobre_suma_fusionada": 1.75
     },
     {
       "obra": "gtap10",
@@ -120,12 +471,84 @@
       "openalex_ids": [
         "W2955545697"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 942,
+      "scholar_suma": 967,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 5,
+      "scholar_filas": 6,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "The GTAP data base: version 10",
+          "tipo": "HTML",
+          "cites": 942,
+          "anio": "2019",
+          "autores": "A Aguiar, M Chepeliev, EL Corong, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3268885460190726147&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The GTAP Data Base: Version 10. J Global Econ Anal 4 (1): 1–27",
+          "tipo": "CITATION",
+          "cites": 14,
+          "anio": "2019",
+          "autores": "A Aguiar, M Chepeliev, E Corong, R McDougall, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8978872273159607885&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "van der. The GTAP Data Base: Version 10. J Glob Econ Anal 2019; 4: 1–27",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "A Aguiar, M Chepeliev, EL Corong, R McDougall, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=13331290862327032023&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The GTAP Data Base: Version 10. J Glob Econ Anal. 2019; 4 (1): 1–27",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "A Aguiar, M Chepeliev, EL Corong, R McDougall, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3585700116732620186&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The GTAP Data Base: Version 10. 2019 4, 27",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2019",
+          "autores": "A Aguiar, M Chepeliev, EL Corong, R McDougall, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=3474281804358433999&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The GTAP data base: version 10. J Glob Econ Anal. 2019; 4: 1–27",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "A Aguiar, M Chepeliev, EL Corong, R McDougall, ...",
+          "origen": "04B7D40F4390AF56.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=1563988571050856460&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.89,
+      "razon_sobre_suma_fusionada": 1.94
     },
     {
       "obra": "standard7",
@@ -136,12 +559,95 @@
         "W2633769093",
         "W4242531241"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 625,
+      "scholar_suma": 640,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 6,
+      "scholar_filas": 7,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "The Standard GTAP Model, version 7. JGEA 2, 1–119",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2017",
+          "autores": "E Corong, H Thomas, M Robert, M Tsigas, ...",
+          "origen": "2026-08-25_standard_gtap_v7.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
+          "cites_url": "https://scholar.google.com/scholar?cites=4845510458296912133&as_sdt=2005&sciodt=2007&hl=en"
+        },
+        {
+          "titulo": "The Standard GTAP Model, Version 7. J Glob Econ Anal. 2017; 2 (1): 1–119",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "E Corong, T Hertel, R McDougall, M Tsigas, ...",
+          "origen": "2026-08-25_standard_gtap_v7.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
+          "cites_url": "https://scholar.google.com/scholar?cites=1799968842413416687&as_sdt=2005&sciodt=2007&hl=en"
+        },
+        {
+          "titulo": "The standard GTAP model, version 7",
+          "tipo": null,
+          "cites": 625,
+          "anio": "2017",
+          "autores": "EL Corong, TW Hertel, R McDougall, ...",
+          "origen": "C3DBC7B14780C9F8.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=15623878936333151049&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "van der.(2017). The Standard GTAP Model, Version 7",
+          "tipo": "CITATION",
+          "cites": 4,
+          "anio": null,
+          "autores": "EL Corong, TW Hertel, R McDougall, ME Tsigas, ...",
+          "origen": "C3DBC7B14780C9F8.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=705103614354692907&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The Standard GTAP Model, Version 7",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "2017",
+          "autores": "L Erwin, TW Hertel, RA McDougall, ME Tsigas, ...",
+          "origen": "C3DBC7B14780C9F8.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10066906520598743851&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The Standard GTAP Model Version 7. Retrieved from JGEA",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2017",
+          "autores": "E Corong, T Hertel, R McDougall, M Tsigas, ...",
+          "origen": "C3DBC7B14780C9F8.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10078749728708201680&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The standard GTAP model, version 7. J Glob Econ Anal 2017; 2: 1–119",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "EL Corong, TW Hertel, R McDougall, ME Tsigas, ...",
+          "origen": "C3DBC7B14780C9F8.json",
+          "via": "consulta guardada",
+          "consulta": "\"The Standard GTAP Model, Version 7\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=7596584224292850230&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 2.13,
+      "razon_sobre_suma_fusionada": 2.18
     },
     {
       "obra": "structure",
@@ -151,12 +657,195 @@
       "openalex_ids": [
         "W2497463976"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 767,
+      "scholar_suma": 821,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 15,
+      "scholar_filas": 16,
+      "capturada": true,
       "es_libro": true,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "Structure of GTAP",
+          "tipo": null,
+          "cites": 767,
+          "anio": "1997",
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=13857407237884809613&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP framework",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10867110266243147919&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP Model",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "1996",
+          "autores": "T Hertel",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=12964765707110617153&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP",
+          "tipo": "CITATION",
+          "cites": 6,
+          "anio": "1997",
+          "autores": "ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=9139824810164986871&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP: Global trade analysis project",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "1999",
+          "autores": "T Hertel, M Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=11454455521817884774&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP, em Thomas W. Hertel, editor",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=5075780767566427566&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP, Chapter in",
+          "tipo": "CITATION",
+          "cites": 14,
+          "anio": "1997",
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=14609557354153590652&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP.[In]",
+          "tipo": "CITATION",
+          "cites": 4,
+          "anio": "1997",
+          "autores": "H Thomas, M Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=1165491981267902958&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP, w: Hertel TW",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "1997",
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=2097867805268081383&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "W. and ME Tsigas, 1997.“Structure of GTAP.” Thomas W. Hertel, ed",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": null,
+          "autores": "T Herterl",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=4751992245782849354&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "E.(1999). Structure of GTAP",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": null,
+          "autores": "TW Hertel, M Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=1404301192882918624&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP', Chap. 2 in",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "1997",
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8183320589630606720&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP. 1997",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "2013",
+          "autores": "T HERTEL, M TSIGAS",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10094451422104803366&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Tsigas, Structure of GTAP in Hertel, T",
+          "tipo": "CITATION",
+          "cites": 3,
+          "anio": "1997",
+          "autores": "T Hertel",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=1641885676335248793&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "The structure of GTAP w: Hertel, T.[red.]",
+          "tipo": "CITATION",
+          "cites": 4,
+          "anio": "1999",
+          "autores": "T Hertel, M Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8721160836047336370&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Structure of GTAP, TW 183 動学的応用一般均衡モデルによる高速増殖炉サイクルの導入影響評価手法の開発 computable general equilibrium model of the …",
+          "tipo": "CITATION",
+          "cites": 2,
+          "anio": "1997",
+          "autores": "TW Hertel, ME Tsigas",
+          "origen": "929BBD690726512B.json",
+          "via": "consulta guardada",
+          "consulta": "\"Structure of GTAP\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8480396198342539754&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 2.95,
+      "razon_sobre_suma_fusionada": 3.16,
+      "advertencia": "Scholar devuelve tambien 'Theoretical structure of Dynamic GTAP' (Ianchovichina y McDougall, 377 citas), que es otra obra y queda excluida."
     },
     {
       "obra": "gtapagr",
@@ -167,12 +856,40 @@
         "W3121700781",
         "W1525723848"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 222,
+      "scholar_suma": 277,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 2,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "GTAP-AGR: A framework for assessing the implications of multilateral changes in agricultural policies",
+          "tipo": "PDF",
+          "cites": 222,
+          "anio": "2005",
+          "autores": "R Keeney, T Hertel",
+          "origen": "7F784CD2D7977063.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=17142294259691724431&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "GTAP-AGR: a framework for assessing the implications of multilateral changes in agricultural policies. GTAP Technical Paper No. 24",
+          "tipo": "CITATION",
+          "cites": 55,
+          "anio": "2005",
+          "autores": "R Keeney, TW Hertel",
+          "origen": "7F784CD2D7977063.json",
+          "via": "consulta guardada",
+          "consulta": "\"GTAP-AGR: A Framework for Assessing the Implications of Multilateral Changes in Agricultural Policies\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=17324890721333189309&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.24,
+      "razon_sobre_suma_fusionada": 1.55
     },
     {
       "obra": "gtap11",
@@ -182,12 +899,28 @@
       "openalex_ids": [
         "W4320021891"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 344,
+      "scholar_suma": 344,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 0,
+      "scholar_filas": 1,
+      "capturada": true,
       "es_libro": false,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "The global trade analysis project (GTAP) data base: Version 11",
+          "tipo": null,
+          "cites": 344,
+          "anio": "2022",
+          "autores": "A Aguiar, M Chepeliev, E Corong, ...",
+          "origen": "388D50C15FAC8AB2.json",
+          "via": "consulta guardada",
+          "consulta": "\"The GTAP Data Base: Version 11\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=13682455976225578091&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 2.23
     },
     {
       "obra": "dynamic",
@@ -197,12 +930,40 @@
       "openalex_ids": [
         "W1574368972"
       ],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 202,
+      "scholar_suma": 213,
+      "scholar_origen": "registro indexado",
+      "scholar_registros_indexados": 1,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 2,
+      "capturada": true,
       "es_libro": true,
-      "registros": []
+      "registros": [
+        {
+          "titulo": "Dynamic modeling and applications for global economic analysis",
+          "tipo": "BOOK",
+          "cites": 202,
+          "anio": "2012",
+          "autores": "E Ianchovichina, TL Walmsley",
+          "origen": "84777E0DE3556802.json",
+          "via": "consulta guardada",
+          "consulta": "\"Dynamic Modeling and Applications for Global Economic Analysis\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=17461510017022165438&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        {
+          "titulo": "Dynamic modeling and applications for global economic analysis",
+          "tipo": "CITATION",
+          "cites": 11,
+          "anio": "2012",
+          "autores": "TL Walmsley, E Ianchovichina",
+          "origen": "84777E0DE3556802.json",
+          "via": "consulta guardada",
+          "consulta": "\"Dynamic Modeling and Applications for Global Economic Analysis\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=13514814898102384447&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
+      "razon_scholar_sobre_openalex": 1.44,
+      "razon_sobre_suma_fusionada": 1.52
     },
     {
       "obra": "gtap12",
@@ -214,11 +975,14 @@
       ],
       "scholar_mayor": null,
       "scholar_suma": null,
+      "scholar_origen": null,
+      "scholar_registros_indexados": 0,
+      "scholar_clusters_citation": 0,
       "scholar_filas": 0,
       "capturada": false,
       "es_libro": false,
       "registros": [],
-      "advertencia": "1 cita en OpenAlex: demasiado reciente para sostener un cociente. Se captura y se reporta, pero no entra en la mediana."
+      "advertencia": "1 cita en OpenAlex y 0 resultados en Scholar: demasiado reciente para sostener un cociente. Se reporta pero no entra en la mediana."
     },
     {
       "obra": "gtap8",
@@ -226,12 +990,27 @@
       "openalex": null,
       "openalex_registros": 0,
       "openalex_ids": [],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 52,
+      "scholar_suma": 52,
+      "scholar_origen": "cluster CITATION: Scholar no tiene el documento indexado",
+      "scholar_registros_indexados": 0,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 1,
+      "capturada": true,
       "es_libro": false,
-      "registros": [],
+      "registros": [
+        {
+          "titulo": "Global trade, assistance, and production: the GTAP 8 data base, center for global trade analysis",
+          "tipo": "CITATION",
+          "cites": 52,
+          "anio": "2012",
+          "autores": "B Narayanan, A Aguiar, R McDougall",
+          "origen": "07EBB35E92A622AB.json",
+          "via": "consulta guardada",
+          "consulta": "\"Global Trade, Assistance, and Production: The GTAP 8 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=10838284026012206211&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
       "razon_scholar_sobre_openalex": null,
       "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
     },
@@ -241,12 +1020,27 @@
       "openalex": null,
       "openalex_registros": 0,
       "openalex_ids": [],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 1561,
+      "scholar_suma": 1561,
+      "scholar_origen": "cluster CITATION: Scholar no tiene el documento indexado",
+      "scholar_registros_indexados": 0,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 1,
+      "capturada": true,
       "es_libro": false,
-      "registros": [],
+      "registros": [
+        {
+          "titulo": "Global trade, assistance, and production: the GTAP 7 data base",
+          "tipo": "CITATION",
+          "cites": 1561,
+          "anio": "2008",
+          "autores": "B Narayanan, TL Walmsley",
+          "origen": "07EBB35E92A622AB.json",
+          "via": "consulta guardada",
+          "consulta": "\"Global Trade, Assistance, and Production: The GTAP 8 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=7481030695949203282&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
       "razon_scholar_sobre_openalex": null,
       "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
     },
@@ -256,41 +1050,150 @@
       "openalex": null,
       "openalex_registros": 0,
       "openalex_ids": [],
-      "scholar_mayor": null,
-      "scholar_suma": null,
-      "scholar_filas": 0,
-      "capturada": false,
+      "scholar_mayor": 59,
+      "scholar_suma": 59,
+      "scholar_origen": "cluster CITATION: Scholar no tiene el documento indexado",
+      "scholar_registros_indexados": 0,
+      "scholar_clusters_citation": 1,
+      "scholar_filas": 1,
+      "capturada": true,
       "es_libro": false,
-      "registros": [],
+      "registros": [
+        {
+          "titulo": "Global trade, assistance, and production: the GTAP 6 Data Base Center for global trade analysis",
+          "tipo": "CITATION",
+          "cites": 59,
+          "anio": "2006",
+          "autores": "BV Dimaranan, RA McDougall",
+          "origen": "7654169F84DC64CF.json",
+          "via": "consulta guardada",
+          "consulta": "\"Global Trade, Assistance, and Production: The GTAP 6 Data Base\" [title], no patents",
+          "cites_url": "https://scholar.google.com/scholar?cites=8013932258194325703&as_sdt=2005&sciodt=0,5&hl=en"
+        }
+      ],
       "razon_scholar_sobre_openalex": null,
       "nota_hueco": "OpenAlex no indexa esta obra. Sin denominador no hay razon: el valor de Scholar mide el tamano del hueco de indexacion en terminos absolutos."
     }
   ],
   "descartadas_por_tipo_citation": [
     {
-      "titulo": "The Standard GTAP Model, version 7. JGEA 2, 1–119",
+      "titulo": "Pakistan in the GTAP data base: version 10",
       "tipo": "CITATION",
       "cites": 2,
-      "anio": "2017",
-      "autores": "E Corong, H Thomas, M Robert, M Tsigas, ...",
-      "origen": "9251858FF8FC1276.json",
+      "anio": "2018",
+      "autores": "M Zeshan",
+      "origen": "04B7D40F4390AF56.json",
       "via": "consulta guardada",
-      "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
-      "cites_url": "https://scholar.google.com/scholar?cites=4845510458296912133&as_sdt=2005&sciodt=2007&hl=en",
-      "motivo": "registro CITATION: Scholar lo fabrica a partir de una referencia suelta; no es la obra y su conteo no sirve"
+      "consulta": "\"The GTAP Data Base: Version 10\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=6136772848823311999&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
     },
     {
-      "titulo": "The Standard GTAP Model, Version 7. J Glob Econ Anal. 2017; 2 (1): 1–119",
+      "titulo": "The GTAP Data Base: Version 11. JGEA 4, 1-27",
       "tipo": "CITATION",
       "cites": 2,
-      "anio": null,
-      "autores": "E Corong, T Hertel, R McDougall, M Tsigas, ...",
-      "origen": "9251858FF8FC1276.json",
+      "anio": "2019",
+      "autores": "A Aguiar, M Chepeliev, EL Corong, R McDougall, ...",
+      "origen": "388D50C15FAC8AB2.json",
       "via": "consulta guardada",
-      "consulta": "\"The Standard GTAP Model, Version 7\" [title]",
-      "cites_url": "https://scholar.google.com/scholar?cites=1799968842413416687&as_sdt=2005&sciodt=2007&hl=en",
-      "motivo": "registro CITATION: Scholar lo fabrica a partir de una referencia suelta; no es la obra y su conteo no sirve"
+      "consulta": "\"The GTAP Data Base: Version 11\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=7616434841315908474&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
+    },
+    {
+      "titulo": "GTAP-E: An energy-environmental version of the GTAP model with emission trading",
+      "tipo": "CITATION",
+      "cites": 3,
+      "anio": "2007",
+      "autores": "C Kemfert, TP Truong, JM Burniaux",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=6551804474347515973&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
+    },
+    {
+      "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading–USER'S GUIDE, GTAP Resource, 2509, Retrieved December 12 …",
+      "tipo": "CITATION",
+      "cites": 2,
+      "anio": "2007",
+      "autores": "TP Truong",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=9074720488680867699&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
+    },
+    {
+      "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading: DIW-Diskussionspapiere",
+      "tipo": "CITATION",
+      "cites": 2,
+      "anio": "2007",
+      "autores": "TP Truong, C Kemfert, JM Burniaux",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=13919236808594894192&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
+    },
+    {
+      "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading USER'S GUIDE,(2007)",
+      "tipo": "CITATION",
+      "cites": 3,
+      "anio": "2007",
+      "autores": "T Truong",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=16830233331034435253&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
+    },
+    {
+      "titulo": "GTAP-E: An energy-Environmental version of the GTAP model with emission trading-USER'S GUIDE, GTAP resource, 2509",
+      "tipo": "CITATION",
+      "cites": 2,
+      "anio": "2007",
+      "autores": "TP Truong",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=4836671563643858655&as_sdt=2005&sciodt=0,5&hl=en",
+      "motivo": "ficha CITATION que no corresponde a ninguna obra de la tabla"
     }
   ],
-  "sin_clasificar": []
+  "sin_clasificar": [
+    {
+      "titulo": "Theoretical structure of Dynamic GTAP",
+      "tipo": null,
+      "cites": 377,
+      "anio": "2012",
+      "autores": "E Ianchovichina, R McDougall",
+      "origen": "929BBD690726512B.json",
+      "via": "consulta guardada",
+      "consulta": "\"Structure of GTAP\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=11217521056781651704&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "titulo": "GTAP-E: An energy-environmental version of the GTAP Model with emission trading",
+      "tipo": "PDF",
+      "cites": 46,
+      "anio": "2007",
+      "autores": "TP Truong, C Kemfert, JM Burniaux",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=8895005288388337998&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "titulo": "GTAP-E: An Energy-Environmental Version of the GTAP Model with Emission Trading USER'S GUIDE",
+      "tipo": "PDF",
+      "cites": 10,
+      "anio": "2007",
+      "autores": "TP Truong",
+      "origen": "EC65C584E4BB5611.json",
+      "via": "consulta guardada",
+      "consulta": "\"GTAP-E: An Energy-Environmental Version of the GTAP Model\" [title], no patents",
+      "cites_url": "https://scholar.google.com/scholar?cites=4977427339247529700&as_sdt=2005&sciodt=0,5&hl=en"
+    }
+  ]
 }

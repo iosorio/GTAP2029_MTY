@@ -20,8 +20,24 @@
   },
   "descomposicion_de_la_brecha": {
     "factor_universo_semilla": 1.73,
-    "factor_cobertura_implicito": 5.0,
     "brecha_total_vs_ruta_a": 8.66,
-    "nota": "factor_cobertura_implicito es lo que Google Scholar tendria que estar contando de mas, por obra y a igual fecha, para que el 24,400 sea consistente con el conteo de OpenAlex. La Ruta B (Publish or Perish) lo verifica midiendo la razon Scholar/OpenAlex obra por obra."
+    "residuo_si_solo_se_cuenta_el_universo": 5.0,
+    "nota": "residuo_si_solo_se_cuenta_el_universo es lo que faltaria explicar despues de ampliar la semilla. Se llamaba factor_cobertura_implicito y se reportaba como si fuera cobertura; era una deduccion por residuo, no una medicion.",
+    "cobertura_medida": {
+      "mediana": 1.81,
+      "minimo": 1.17,
+      "maximo": 6.42,
+      "obras": 10,
+      "fuente": "Ruta B, Publish or Perish sobre Google Scholar; ver 09_procesar_pop.py"
+    },
+    "citas_explicadas": 8824,
+    "brecha_sin_explicar": 2.77,
+    "lectura": "La cobertura medida (1.81x) explica bastante menos que el 5.00x que se deducia. Quedan 2.77x sin explicar. La hipotesis principal son los conference papers de GTAP --miles de documentos que OpenAlex no indexa como serie y que la semilla de 323 obras no cubre--, pero es una hipotesis SIN MEDIR: no se sustituye un residuo deducido por otro."
+  },
+  "recalculo_del_bloque_derivado": {
+    "fecha": "2026-08-31",
+    "motivo": "La Ruta B midio el factor de cobertura, asi que la descomposicion se rehizo con 07_reconciliacion_2017.py. La corrida completa se corto con HTTP 429: OpenAlex agoto su cuota diaria por IP.",
+    "alcance": "Solo se recalculo descomposicion_de_la_brecha, que es aritmetica pura sobre los conteos ya almacenados. Ningun valor consultado a la API se modifico: siguen siendo los de fecha_consulta.",
+    "verificacion": "La corrida truncada reprodujo los acumulados de la anterior en los cinco puntos de control (40, 80, 120, 160 y 200 de 323 obras), asi que los conteos de partida son estables."
   }
 }

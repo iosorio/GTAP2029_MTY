@@ -56,10 +56,12 @@ difieren por un factor de tres: 0.35% sobre las 14 obras canónicas, 0.41% sobre
 corpus, 0.40% sobre los 12,499 trabajos que mencionan «GTAP» en texto completo. Esa estabilidad,
 y no el tamaño del conteo, es lo que sostiene el argumento.
 
-La cifra es además un **piso**: OpenAlex no indexa tres de los volúmenes de la base de datos ni
-los conference papers, y no cubre toda la literatura gris. El método, sus límites y la
-reconciliación con el «24,400+ citations» que GTAP difundió en 2017 —descompuesto en 1.73x de
-universo semilla por 5.00x de cobertura de Google Scholar— están en `bibliometria.html`.
+La cifra es además un **piso**: OpenAlex no indexa tres de los volúmenes de la base de datos
+—que en Google Scholar suman 1,672 citas— ni los conference papers, y no cubre toda la
+literatura gris. El método, sus límites y la reconciliación con el «24,400+ citations» que GTAP
+difundió en 2017 están en `bibliometria.html`. Esa reconciliación **no cierra**: el universo
+semilla explica 1.73x y la cobertura de Google Scholar, medida obra por obra, 1.81x; quedan
+2.77x sin explicar, y así se reporta.
 
 ## Reproducir el conteo
 

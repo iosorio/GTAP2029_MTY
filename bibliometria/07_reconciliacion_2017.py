@@ -67,6 +67,59 @@ def cuenta(filtro):
     return get(url)["meta"]["count"]
 
 
+COBERTURA_MEDIDA = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                 "resultados_pop.json")
+
+
+def descompone(boletin, suma_2017, suma_a_2017):
+    """Descompone la brecha frente al 24,400 del boletin de GTAP de 2017.
+
+    Hasta la captura de Google Scholar del 31 de agosto de 2026, el factor de
+    cobertura se DEDUCIA por residuo: era lo que Scholar tendria que contar de
+    mas para que el 24,400 cuadrara, y salia 5.00x. La Ruta B lo midio obra por
+    obra y dio mediana 1.81x. Con eso la brecha ya no cierra, y este script deja
+    de fingir que si: reporta lo medido y declara lo que queda sin explicar.
+    """
+    if not suma_a_2017 or not suma_2017:
+        return None
+    d = dict(
+        factor_universo_semilla=round(suma_2017 / suma_a_2017, 2),
+        brecha_total_vs_ruta_a=round(boletin / suma_a_2017, 2),
+        residuo_si_solo_se_cuenta_el_universo=round(boletin / suma_2017, 2),
+        nota=("residuo_si_solo_se_cuenta_el_universo es lo que faltaria explicar "
+              "despues de ampliar la semilla. Se llamaba factor_cobertura_implicito "
+              "y se reportaba como si fuera cobertura; era una deduccion por "
+              "residuo, no una medicion."),
+    )
+    try:
+        with open(COBERTURA_MEDIDA, encoding="utf-8") as fh:
+            pop = json.load(fh)["resumen"]
+    except (OSError, ValueError, KeyError):
+        d["cobertura_medida"] = None
+        return d
+    cob = pop.get("razon_mediana")
+    if not cob:
+        d["cobertura_medida"] = None
+        return d
+    explicado = suma_a_2017 * d["factor_universo_semilla"] * cob
+    d.update(
+        cobertura_medida=dict(
+            mediana=cob, minimo=pop.get("razon_minima"), maximo=pop.get("razon_maxima"),
+            obras=pop.get("obras_con_razon"),
+            fuente="Ruta B, Publish or Perish sobre Google Scholar; ver 09_procesar_pop.py"),
+        citas_explicadas=round(explicado),
+        brecha_sin_explicar=round(boletin / explicado, 2),
+        lectura=("La cobertura medida (%.2fx) explica bastante menos que el 5.00x "
+                 "que se deducia. Quedan %.2fx sin explicar. La hipotesis principal "
+                 "son los conference papers de GTAP --miles de documentos que "
+                 "OpenAlex no indexa como serie y que la semilla de 323 obras no "
+                 "cubre--, pero es una hipotesis SIN MEDIR: no se sustituye un "
+                 "residuo deducido por otro."
+                 % (cob, boletin / explicado)),
+    )
+    return d
+
+
 def main():
     universo = json.load(open("resultados_universo_ampliado.json"))
     semilla_ids = []
@@ -134,30 +187,22 @@ def main():
             citas_acervo_actual=suma_a_hoy,
             citas_acervo_2017=suma_a_2017,
         ),
-        descomposicion_de_la_brecha=dict(
-            factor_universo_semilla=(round(suma_2017 / suma_a_2017, 2)
-                                     if suma_a_2017 else None),
-            factor_cobertura_implicito=(round(boletin / suma_2017, 2)
-                                        if suma_2017 else None),
-            brecha_total_vs_ruta_a=(round(boletin / suma_a_2017, 2)
-                                    if suma_a_2017 else None),
-            nota=("factor_cobertura_implicito es lo que Google Scholar tendria "
-                  "que estar contando de mas, por obra y a igual fecha, para "
-                  "que el 24,400 sea consistente con el conteo de OpenAlex. "
-                  "La Ruta B (Publish or Perish) lo verifica midiendo la razon "
-                  "Scholar/OpenAlex obra por obra."),
-        ),
+        descomposicion_de_la_brecha=descompone(boletin, suma_2017, suma_a_2017),
     )
     json.dump(salida, sys.stdout, indent=2, ensure_ascii=False)
     sys.stdout.write("\n")
+    d = salida["descomposicion_de_la_brecha"] or {}
     sys.stderr.write(
         "\nSemilla %d obras | citas hoy %d | citas a %d: %d\n"
         "Ruta A a %d: %d citas\n"
-        "factor semilla %.2fx | cobertura implicita %.2fx | brecha total %.2fx\n"
+        "factor semilla %s x | brecha total %s x\n"
         % (len(semilla_ids), suma_hoy, CORTE, suma_2017, CORTE, suma_a_2017,
-           suma_2017 / suma_a_2017 if suma_a_2017 else 0,
-           boletin / suma_2017 if suma_2017 else 0,
-           boletin / suma_a_2017 if suma_a_2017 else 0))
+           d.get("factor_universo_semilla"), d.get("brecha_total_vs_ruta_a")))
+    if d.get("cobertura_medida"):
+        sys.stderr.write("cobertura MEDIDA %s x -> explica %s citas; "
+                         "sin explicar %s x\n"
+                         % (d["cobertura_medida"]["mediana"],
+                            d["citas_explicadas"], d["brecha_sin_explicar"]))
 
 
 if __name__ == "__main__":

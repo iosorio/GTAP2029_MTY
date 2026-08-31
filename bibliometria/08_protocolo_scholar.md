@@ -22,11 +22,15 @@ está medido:
 | factor | valor | estado |
 |---|---:|---|
 | universo semilla | 1.73x | **medido** sobre OpenAlex |
-| cobertura de Scholar | 5.00x | **deducido por residuo** ← esto es lo que se verifica aquí |
-| brecha total | 8.66x | 2,818 × 8.66 ≈ 24,400 |
+| cobertura de Scholar | ~~5.00x~~ → **1.81x** | **medido aquí el 31-ago-2026** |
+| sin explicar | 2.77x | queda abierto |
 
-El 5.00x es lo que Scholar tendría que estar contando de más, por obra y a igual
-fecha, para que el 24,400 cuadre. No es una medición: es lo que sobra al despejar.
+El 5.00x era lo que Scholar tendría que estar contando de más, por obra y a igual
+fecha, para que el 24,400 cuadrara. No era una medición: era lo que sobraba al
+despejar. **Esta ruta lo midió y resultó 1.81x**, así que la brecha ya no cierra.
+
+> **Estado: cerrado.** Las trece consultas se corrieron el 31 de agosto de 2026.
+> Resultados en `resultados_pop.json`; el resumen está al final de este documento.
 
 **No mide, y no puede medir, un conteo de trabajos distintos.** Scholar no
 permite calcular la unión de citantes de varias obras. La unión sale de OpenAlex
@@ -81,9 +85,17 @@ PoP resumió la consulta fallida como `cites_total = 4`. Tomado al pie de la
 letra implicaría que Scholar cuenta **menos** que OpenAlex (293) — la brecha al
 revés de la realidad.
 
-**Regla:** mira siempre la columna `Type`. Sirven `BOOK`, `ARTICLE`, `JOURNAL`,
-o tipo vacío con `ArticleURL` presente. Si las únicas filas son `CITATION`, la
-consulta falló aunque devuelva un número.
+**Regla, corregida por la captura del 31 de agosto:** el tipo `CITATION` **no
+descalifica por sí solo**. Cuando Scholar no tiene el documento indexado
+—documentación de Purdue sin DOI ni PDF rastreable— el cluster de referencias es
+el único registro que existe de la obra, y su conteo es el bueno: así se midió el
+volumen GTAP 5, con **1,618 citas**, y así se dimensionaron los tres volúmenes
+del Bloque B. Lo que no sirve es un **fragmento** suelto de dos o tres citas.
+
+La prueba que manda es la **plausibilidad del conteo**, no la etiqueta. Prefiere
+siempre el registro indexado (`BOOK`, `ARTICLE`, `PDF`, `HTML`, o tipo vacío con
+`ArticleURL`) si existe; si no existe, usa el mayor cluster `CITATION` y anota
+que viene de ahí.
 
 ### 2. El total agregado no es el dato
 
@@ -229,3 +241,49 @@ un promedio no dice nada), y escribe `resultados_pop.json` más la hoja
 python3 09_procesar_pop.py                 # lee scholar/ y pop_csv/
 python3 09_procesar_pop.py --desde-macpro  # copia Results6/ de la MacPro y procesa
 ```
+
+---
+
+## Resultado de la captura del 31 de agosto de 2026
+
+Trece consultas, todas guardadas en `Results6/` y copiadas a `scholar/`.
+
+| Obra | OpenAlex | Scholar | Razón |
+|---|---:|---:|---:|
+| Global Trade Analysis: Modeling and Applications *(libro)* | 895 | 5,749 | 6.42x |
+| Structure of GTAP *(capítulo)* | 260 | 767 | 2.95x |
+| The GTAP Data Base: Version 11 | 154 | 344 | 2.23x |
+| The Standard GTAP Model, Version 7 | 293 | 625 | 2.13x |
+| The GTAP Data Base: Version 10 | 498 | 942 | 1.89x |
+| An Overview of the GTAP 9 Data Base | 576 | 995 | 1.73x |
+| GTAP 5 Data Base | 1,122 | 1,618 | 1.44x |
+| Dynamic Modeling and Applications *(libro)* | 140 | 202 | 1.44x |
+| GTAP-AGR | 179 | 222 | 1.24x |
+| GTAP-E | 746 | 875 | 1.17x |
+| The GTAP Data Base: Version 12 | 1 | 0 resultados | — |
+
+**Mediana 1.81x, rango 1.17x–6.42x.** Bloque B: volumen 7, **1,561**; volumen 6,
+**59**; volumen 8, **52** — **1,672** citas que OpenAlex registra como cero.
+
+### Lo que la captura enseñó sobre el método
+
+- **La obra #5 sí salió esta vez.** «The Standard GTAP Model, Version 7», que en
+  agosto devolvió sólo fichas `CITATION` de 2 citas, entregó su registro real con
+  **625**. No hizo falta el plan de respaldo por perfil de autor.
+- **El campo de búsqueda nunca fue la variable.** La captura buena del volumen 5
+  se hizo con la frase entrecomillada en **Title words** —exactamente la forma
+  que se había culpado del fracaso de agosto—. Lo que decide es si Scholar tiene
+  registro de la obra.
+- **El campo Authors sobra casi siempre y a veces estorba.** Con `Dimaranan
+  McDougall` el volumen 5 devolvió cero resultados: Scholar tiene ese registro
+  con los autores como `D BV`, basura de parseo. Úsalo sólo con títulos cortos y
+  genéricos, y quítalo en cuanto dé cero.
+- **La búsqueda en texto libre encuentra a los citantes, no a la obra.** El
+  título completo aparece en las bibliografías de quienes la citan, así que
+  Scholar devuelve esa literatura. El total del panel en ese caso son las citas
+  recibidas *por* los citantes: la cantidad que esta nota separa desde el
+  principio y que no debe mezclarse.
+- **PoP reutiliza el nombre de archivo** al reescribir una entrada guardada.
+  Usa **`New`** antes de cada consulta o cada búsqueda machaca la anterior; así
+  se perdió de `Results6/` la consulta del 25 de agosto, que sólo sobrevive en
+  git como `scholar/2026-08-25_standard_gtap_v7.json`.

@@ -1,10 +1,10 @@
 ﻿{
-	"$folder": "My searches|Trash",
+	"$folder": "My searches",
 	"$query": {
 		"$type": "PoPGScholar",
 		"Name": "\"Global Trade, Assistance, and Production: The GTAP 5 Data Base\" [title], no patents",
-		"QueryTime": 1788214536,
-		"CacheTime": 1788214027,
+		"QueryTime": 1788214604,
+		"CacheTime": 1788214604,
 		"LastResult": 0,
 		"LastSubResult": 0,
 		"Title": "\"Global Trade, Assistance, and Production: The GTAP 5 Data Base\"",

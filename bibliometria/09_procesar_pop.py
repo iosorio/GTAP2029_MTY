@@ -63,44 +63,51 @@ MINIMO_PLAUSIBLE = 10
 # fusionadas sin que nadie sume a mano. `gs` empareja las filas de Scholar.
 OBRAS = [
     dict(clave="gtap5", titulo="Global Trade, Assistance, and Production: The GTAP 5 Data Base",
-         oa=r"gtap 5 data", gs=r"gtap 5 data", libro=True),
+         oa=r"gtap 5 data", gs=r"gtap\s?5\s?data\s?base", anios={2002}, libro=True),
     dict(clave="hertel1997", titulo="Global Trade Analysis: Modeling and Applications",
-         oa=r"global trade analysis", gs=r"global trade analysis", libro=True,
-         suma_capitulo="structure",
+         oa=r"global trade analysis", gs=r"global trade analysis:? modeling and applications",
+         anios={1997}, libro=True, suma_capitulo="structure",
          nota="Scholar agrega ediciones, reimpresiones y capitulos bajo el registro "
               "del libro; OpenAlex lista 'Structure of GTAP' (cap. 2) aparte. La "
               "razon de un libro es el techo del factor de cobertura, no su valor tipico."),
     dict(clave="gtape", titulo="GTAP-E: An Energy-Environmental Version of the GTAP Model",
-         oa=r"gtap-?e\b", gs=r"gtap-?e\b.*energy.?environmental"),
+         oa=r"gtap-?e\b", gs=r"gtap-?e\b.*energy.?environmental", anios={2001, 2002},
+         nota="Scholar tambien lista una revision de 2007 (Truong, Kemfert, Burniaux) que "
+              "OpenAlex no separa; queda excluida por anio. Es la obra con el "
+              "emparejamiento mas sucio de las once."),
     dict(clave="gtap9", titulo="An Overview of the GTAP 9 Data Base",
-         oa=r"gtap 9 data", gs=r"overview of the gtap 9"),
+         oa=r"gtap 9 data", gs=r"overview of the gtap\s?9\s?data\s?base", anios={2016}),
     dict(clave="gtap10", titulo="The GTAP Data Base: Version 10",
-         oa=r"gtap data ?base:? ?version 10", gs=r"gtap data ?base.*version 10"),
+         oa=r"gtap data ?base:? ?version 10", gs=r"gtap data\s?base:? ?version 10",
+         anios={2019}, excluir=r"pakistan"),
     dict(clave="standard7", titulo="The Standard GTAP Model, Version 7",
-         oa=r"standard gtap model", gs=r"standard gtap model.*version 7"),
+         oa=r"standard gtap model", gs=r"standard gtap model,? version 7", anios={2017}),
     dict(clave="structure", titulo="Structure of GTAP",
-         oa=r"structure of gtap", gs=r"structure of gtap", libro=True),
+         oa=r"structure of gtap", gs=r"structure of gtap", anios={1996, 1997, 1999, 2013},
+         excluir=r"theoretical structure|dynamic gtap", libro=True,
+         nota="Scholar devuelve tambien 'Theoretical structure of Dynamic GTAP' "
+              "(Ianchovichina y McDougall, 377 citas), que es otra obra y queda excluida."),
     dict(clave="gtapagr", titulo="GTAP-AGR: A Framework for Assessing the Implications "
                                  "of Multilateral Changes in Agricultural Policies",
-         oa=r"gtap-?agr", gs=r"gtap-?agr"),
+         oa=r"gtap-?agr", gs=r"gtap-?agr", anios={2005}),
     dict(clave="gtap11", titulo="The GTAP Data Base: Version 11",
-         oa=r"gtap data ?base:? ?version 11", gs=r"gtap data ?base.*version 11"),
+         oa=r"gtap data ?base:? ?version 11", gs=r"data\s?base:? ?version 11", anios={2022}),
     dict(clave="dynamic", titulo="Dynamic Modeling and Applications for Global Economic Analysis",
          oa=r"dynamic modeling and applications", gs=r"dynamic modeling and applications",
-         libro=True),
+         anios={2012}, libro=True),
     dict(clave="gtap12", titulo="The GTAP Data Base: Version 12",
-         oa=r"gtap data ?base:? ?version 12", gs=r"gtap data ?base.*version 12",
+         oa=r"gtap data ?base:? ?version 12", gs=r"data\s?base:? ?version 12", anios={2025},
          excluir_de_razon=True,
-         nota="1 cita en OpenAlex: demasiado reciente para sostener un cociente. "
-              "Se captura y se reporta, pero no entra en la mediana."),
+         nota="1 cita en OpenAlex y 0 resultados en Scholar: demasiado reciente para "
+              "sostener un cociente. Se reporta pero no entra en la mediana."),
     # Bloque B: OpenAlex no los indexa como obras. Sin denominador no hay razon;
     # el valor de Scholar dimensiona el hueco en terminos absolutos.
     dict(clave="gtap8", titulo="Global Trade, Assistance, and Production: The GTAP 8 Data Base",
-         oa=None, gs=r"gtap 8 data", hueco=True),
+         oa=None, gs=r"gtap\s?8\s?data\s?base", anios={2012}, hueco=True),
     dict(clave="gtap7", titulo="Global Trade, Assistance, and Production: The GTAP 7 Data Base",
-         oa=None, gs=r"gtap 7 data", hueco=True),
+         oa=None, gs=r"gtap\s?7\s?data\s?base", anios={2008}, hueco=True),
     dict(clave="gtap6", titulo="Global Trade, Assistance, and Production: The GTAP 6 Data Base",
-         oa=None, gs=r"gtap 6 data", hueco=True),
+         oa=None, gs=r"gtap\s?6\s?data\s?base", anios={2006}, hueco=True),
 ]
 
 
@@ -179,17 +186,32 @@ def filas_de_csv():
     return salida
 
 
+def identidad(f):
+    """Identificador estable del registro de Scholar.
+
+    `cites_url` trae el id del cluster (`?cites=6913937926432472332`), que no
+    cambia aunque el conteo suba entre capturas. Deduplicar por (titulo, citas)
+    no bastaba: el libro de Hertel llego por CSV en agosto con 5,742 y por
+    consulta guardada hoy con 5,749, y al ser cifras distintas se colaban las
+    dos filas y la suma lo contaba dos veces.
+    """
+    m = re.search(r"[?&]cites=(\d+)", f["cites_url"] or "")
+    return m.group(1) if m else "t:" + re.sub(r"\W+", " ", f["titulo"].lower()).strip()
+
+
 def deduplica(filas):
-    """La misma fila puede llegar por CSV y por consulta guardada."""
-    vistas, unicas, duplicadas = set(), [], 0
+    """Una fila por registro de Scholar, quedandose con la captura mas alta."""
+    mejor, duplicadas = {}, 0
     for f in filas:
-        llave = (f["cites_url"] or f["titulo"].lower(), f["cites"])
-        if llave in vistas:
-            duplicadas += 1
+        k = identidad(f)
+        previa = mejor.get(k)
+        if previa is None:
+            mejor[k] = f
             continue
-        vistas.add(llave)
-        unicas.append(f)
-    return unicas, duplicadas
+        duplicadas += 1
+        if (f["cites"] or 0) > (previa["cites"] or 0):
+            mejor[k] = f
+    return list(mejor.values()), duplicadas
 
 
 def mediana(xs):
@@ -216,23 +238,51 @@ def main():
 
     descartadas, por_obra, sin_clasificar = [], {}, []
     for f in filas:
-        if f["tipo"] == TIPO_FANTASMA:
-            f = dict(f, motivo="registro CITATION: Scholar lo fabrica a partir de una "
-                               "referencia suelta; no es la obra y su conteo no sirve")
-            descartadas.append(f)
-            continue
+        # Emparejar PRIMERO, decidir despues. Un registro CITATION no es basura por
+        # definicion: cuando Scholar no tiene el documento indexado --documentacion
+        # de Purdue sin DOI ni PDF-- el cluster de referencias es el unico registro
+        # de la obra, y su conteo es el bueno. Lo que no sirve es un fragmento
+        # suelto de dos o tres citas. Descartar por tipo tiraba el volumen GTAP 5
+        # (1,618 citas) y los tres volumenes del Bloque B.
         for obra in OBRAS:
-            if re.search(obra["gs"], f["titulo"], re.I):
-                por_obra.setdefault(obra["clave"], []).append(f)
-                break
+            if not re.search(obra["gs"], f["titulo"], re.I):
+                continue
+            if obra.get("excluir") and re.search(obra["excluir"], f["titulo"], re.I):
+                continue
+            # el anio separa obras distintas que comparten titulo (la revision de
+            # GTAP-E de 2007) y registros arrastrados de otra obra (el volumen 5
+            # aparece en la busqueda del 6). Las filas sin anio se admiten.
+            anio = entero(f["anio"])
+            if obra.get("anios") and anio and anio not in obra["anios"]:
+                continue
+            por_obra.setdefault(obra["clave"], []).append(f)
+            break
         else:
-            sin_clasificar.append(f)
+            if f["tipo"] == TIPO_FANTASMA:
+                descartadas.append(dict(f, motivo="ficha CITATION que no corresponde "
+                                                  "a ninguna obra de la tabla"))
+            else:
+                sin_clasificar.append(f)
 
     resultados, razones, razones_sin_libro, huecos = [], [], [], []
     for obra in OBRAS:
         regs = por_obra.get(obra["clave"], [])
         validos = [r for r in regs if r["cites"] is not None]
-        mayor = max((r["cites"] for r in validos), default=None)
+        indexados = [r for r in validos if r["tipo"] != TIPO_FANTASMA]
+        clusters = [r for r in validos if r["tipo"] == TIPO_FANTASMA]
+
+        # El numero de cabecera es el del registro indexado si existe; si Scholar
+        # solo tiene clusters de referencias, el mayor de esos. Se anota de cual.
+        if indexados:
+            mayor, origen = max(r["cites"] for r in indexados), "registro indexado"
+        elif clusters:
+            mayor, origen = (max(r["cites"] for r in clusters),
+                             "cluster CITATION: Scholar no tiene el documento indexado")
+        else:
+            mayor, origen = None, None
+
+        # La suma no duplica: cada cluster cuenta documentos citantes distintos,
+        # y un citante cae en un solo cluster segun como escribio la referencia.
         suma = sum(r["cites"] for r in validos) if validos else None
 
         fila = dict(obra=obra["clave"], titulo=obra["titulo"],
@@ -240,6 +290,9 @@ def main():
                     openalex_registros=obra["openalex_registros"],
                     openalex_ids=obra["openalex_ids"],
                     scholar_mayor=mayor, scholar_suma=suma,
+                    scholar_origen=origen,
+                    scholar_registros_indexados=len(indexados),
+                    scholar_clusters_citation=len(clusters),
                     scholar_filas=len(regs), capturada=bool(regs),
                     es_libro=bool(obra.get("libro")), registros=regs)
 
@@ -253,6 +306,8 @@ def main():
         elif mayor and obra["openalex"]:
             razon = round(mayor / obra["openalex"], 2)
             fila["razon_scholar_sobre_openalex"] = razon
+            if suma and suma != mayor:
+                fila["razon_sobre_suma_fusionada"] = round(suma / obra["openalex"], 2)
             if obra.get("openalex_con_capitulo"):
                 fila["openalex_con_capitulo"] = obra["openalex_con_capitulo"]
                 fila["razon_alterna_con_capitulo"] = round(
