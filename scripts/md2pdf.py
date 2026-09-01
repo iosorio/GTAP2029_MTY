@@ -58,6 +58,7 @@ tr:last-child td {{ border-bottom:none; }}
 hr {{ border:none; border-top:0.8pt solid #0f2b46; margin:3mm 0 2.6mm; }}
 strong {{ color:#0f2b46; }}
 a {{ color:#1a4f7a; text-decoration:none; }}
+a.crudo {{ color:inherit; }}
 em {{ color:#5b6470; }}
 .resumen td:first-child {{ width:21%; }}
 .resumen, .key {{ background:#f4f6f8; border-left:2.2pt solid #0f2b46;
@@ -73,6 +74,15 @@ def inline(t):
     t = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', t)
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', r'<em>\1</em>', t)
+    # URLs y correos escritos en crudo: sin esto Chrome no genera anotación de
+    # enlace y el PDF queda con la dirección en texto plano, a merced de la
+    # autodetección del visor —que la corta a media dirección—. Van con clase
+    # propia para conservar el color del cuerpo: la dirección ya está escrita
+    # completa, así que no necesita anunciarse en azul.
+    t = re.sub(r'(?<!["\w])(https?://[^\s<]+?)(?=[.,;:)]?(?:\s|$))',
+               r'<a class="crudo" href="\1">\1</a>', t)
+    t = re.sub(r'(?<![">\w.])([\w.]+@[\w.]+\.\w+)',
+               r'<a class="crudo" href="mailto:\1">\1</a>', t)
     return t
 
 

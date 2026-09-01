@@ -103,7 +103,7 @@ Requiere Python 3 y Google Chrome.
 para pasar cualquier `.md` a PDF por su cuenta:
 
 ```bash
-python3 scripts/md2pdf.py Ficha_GTAP2029_Monterrey.md 7.9
+python3 scripts/md2pdf.py Ficha_GTAP2029_Monterrey.md 8.0
 ```
 
 El segundo argumento es el tamaño del cuerpo en puntos, y es la perilla para controlar
