@@ -86,4 +86,4 @@ iosoriorodarte@worldbank.org
 **Marcos Esaú Domínguez Viera** — Es egresado de la Facultad de Economía de la UANL (2006) y doctor en Economía del Desarrollo por Wageningen University (2022). Investiga en **Wageningen Social and Economic Research**, institución miembro del consorcio GTAP, y trabaja temas de sistemas alimentarios, política fiscal, cambio climático y dietas saludables en México, Vietnam y Jordania.
 marcos.dominguezviera@wur.nl
 
-**Documentación completa, fuentes y respaldo del conteo bibliométrico:** https://iosorio.github.io/GTAP2029_MTY/
+**La documentación completa, las fuentes y el respaldo del conteo bibliométrico están disponibles a solicitud**, con cualquiera de los dos coproponentes.
