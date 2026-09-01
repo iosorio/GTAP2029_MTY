@@ -33,7 +33,7 @@ Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, O
 | **Perfil** | Es un congreso de modelación aplicada, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
 | **Sedes recientes** | Cartagena 2018, Varsovia 2019, Burdeos 2023, Fort Collins 2024, Kigali 2025, Kioto 2026. |
 
-**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **las sedes de 2027 (Montreal) y 2028 (Bruselas) ya están asignadas: 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria de enero.
+**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **las sedes de 2027 (Montreal) y 2028 (Bruselas) ya están asignadas: 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria que se publica en enero de 2027.
 
 ## ¿Quién asiste?
 
@@ -55,7 +55,7 @@ La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que c
 
 - **Posicionamiento.** Coloca a la Escuela como sede de un foro global de modelación económica para política pública, en temas centrales de la agenda mexicana: el T-MEC, la transición energética, la sostenibilidad del sistema de pensiones.
 - **Vinculación institucional.** Sitúa a la Escuela como interlocutora de los organismos naturales de esta red en México: INEGI, Hacienda, Secretaría de Economía y Banxico.
-- **Beneficio para estudiantes.** GTAP imparte cursos cortos de modelación a alumnos de las universidades sede.
+- **Beneficio para estudiantes.** GTAP imparte cursos cortos de modelación a alumnos de las universidades sede, y el congreso les da contacto directo con economistas e investigadores, además del contenido de las sesiones plenarias.
 - **Puerta de entrada al consorcio.** Purdue University impulsa «comunidades nacionales»: grupos de instituciones de un país que ingresan juntos y definen su propia agenda de modelación. India ya se organizó así, encabezada por el CSEP y con NITI Aayog; Sudáfrica está por hacerlo, y hay actividad en Brasil, Indonesia y Vietnam. **México no tiene presencia**, y la conferencia sería el vehículo para construirla, con el Tec al frente.
 
 ## Esquema propuesto: candidatura conjunta Tec–UANL
