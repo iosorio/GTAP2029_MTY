@@ -13,7 +13,7 @@
 
 ## ¿Qué es GTAP?
 
-El **Global Trade Analysis Project** es un consorcio internacional coordinado desde 1992 por Purdue University. Existe para bajar la barrera de entrada al análisis económico global: que un ministerio, un banco central o una universidad puedan evaluar una reforma comercial, fiscal o climática sin construir desde cero la contabilidad de la economía mundial.
+El **Global Trade Analysis Project** es un consorcio internacional coordinado desde 1992 por el Departamento de Economía Agrícola de Purdue University, cuarto del mundo en economía agrícola y de políticas según el Center for World University Rankings. Existe para bajar la barrera de entrada al análisis económico global: que un ministerio, un banco central o una universidad puedan evaluar una reforma comercial, fiscal o climática sin construir desde cero la contabilidad de la economía mundial.
 
 Para eso sostiene cuatro pilares:
 
