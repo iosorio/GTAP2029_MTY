@@ -5,8 +5,8 @@
 ---
 
 :::resumen
-| **¿Qué es la<br>conferencia?** | En 2029 será el trigésimo segundo encuentro anual del Global Trade Analysis Project, que coordina Purdue University, al cual asisten alrededor de 225 participantes durante una semana. Es un congreso de modelación económica aplicada a política pública. Los métodos que se discuten son de equilibrio general, es decir, sirven para analizar decisiones que impactan a todos los mercados a la vez: la renegociación de un tratado comercial, un cambio en la política climática, una reforma fiscal de largo alcance. Esta candidatura busca aprovechar el interés que hay en el centro GTAP por llevar el congreso a América Latina; sería la tercera vez, después de Cartagena y Santiago. Las sedes de 2027 y 2028 ya se asignaron a Montreal y Bruselas. |
-| **El valor institucional<br>para el Tec** | Como sede, la Escuela alojaría un foro global de modelación económica en temas centrales de la agenda mexicana: el T-MEC, la transición energética, las tendencias demográficas. Tendría ocasión de convocar a los usuarios naturales de estos modelos en México —INEGI, Hacienda, la Secretaría de Economía, Banxico— alrededor de una agenda concreta, y le abriría la puerta a un consorcio de 28 instituciones donde están los equipos que operan estos sistemas de modelación. |
+| **¿Qué es la<br>conferencia?** | En 2029 será el trigésimo segundo encuentro anual del Global Trade Analysis Project, que coordina Purdue University, al cual asisten alrededor de 225 participantes durante una semana. Los métodos que se discuten son de equilibrio general: sirven para analizar decisiones que impactan a todos los mercados a la vez, como la renegociación de un tratado comercial, un cambio en la política climática o una reforma fiscal de largo alcance. Esta candidatura busca aprovechar el interés que hay en el centro GTAP por llevar el congreso a América Latina; sería la tercera vez, después de Cartagena y Santiago. Las sedes de 2027 y 2028 ya se asignaron a Montreal y Bruselas. |
+| **El valor institucional<br>para el Tec** | Como sede, la Escuela alojaría un foro global de modelación estructural para la evaluación de política pública, en economía ambiental y del desarrollo, sobre temas que México tiene enfrente: el T-MEC, la transición energética, las tendencias demográficas. Tendría ocasión de convocar a los usuarios naturales de estos modelos en México —INEGI, Hacienda, la Secretaría de Economía, Banxico— alrededor de una agenda concreta, y le abriría la puerta a un consorcio de 28 instituciones donde están los equipos que operan estos sistemas de modelación. |
 | **El costo<br>y el apoyo** | No se requiere aportación financiera. Purdue University confirmó por escrito que GTAP asume la responsabilidad financiera completa y opera el evento con su propio equipo. Lo que aporta la sede es logístico: espacios, un enlace de eventos, personal de audio y video, y coordinación de alimentos. Los descuentos son bienvenidos y opcionales. Sujeto a disponibilidad, el campus Monterrey es el lugar natural, pero los congresos anteriores se han hecho tanto en campus universitarios como en centros de convenciones. |
 | **¿Qué se pide en<br>este documento?** | No se requiere aún un compromiso institucional. Por ahora se pide luz verde para preparar la candidatura: explorar la disponibilidad de espacios en junio de 2029 y plantear una invitación académica a la UANL, que cuenta con algunos modeladores especializados. |
 :::
@@ -22,7 +22,7 @@ Para eso sostiene cuatro pilares:
 - **Formación.** Imparte cursos cortos de modelación; el curso anual va en su 33ª edición.
 - **Publicación y encuentro.** Publica el *Journal of Global Economic Analysis* y organiza la conferencia anual.
 
-Es el insumo con el que gobiernos, bancos centrales y organismos internacionales evalúan acuerdos comerciales, reformas fiscales y transición energética. **El alcance académico de GTAP también es medible:** 5,878 trabajos académicos distintos, procedentes de 129 países, citan directamente las publicaciones del proyecto, con un promedio de 280 nuevos trabajos por año durante la última década.
+**El alcance académico de GTAP es medible:** 5,878 trabajos académicos distintos, procedentes de 129 países, citan directamente las publicaciones del proyecto, con un promedio de 280 nuevos trabajos por año durante la última década.
 
 Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, OCDE, BID, FAO, IFPRI, PNUD, las comisiones económicas de la ONU, la Comisión Europea, la U.S. International Trade Commission, el USDA y el Banco Asiático de Desarrollo, entre otras. **No es un club de universidades:** lo integran quienes usan los datos para decidir. De las 28, Peking University es la única universidad que figura por nombre propio.
 
@@ -33,29 +33,31 @@ Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, O
 | **Perfil** | Es un congreso de modelación aplicada, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
 | **Sedes recientes** | Cartagena 2018, Varsovia 2019, Burdeos 2023, Fort Collins 2024, Kigali 2025, Kioto 2026. |
 
-**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **las sedes de 2027 (Montreal) y 2028 (Bruselas) ya están asignadas: 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria que se publica en enero de 2027.
+**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria que se publica en enero de 2027.
 
 ## ¿Quién asiste?
 
-El público se reparte en tres capas: un núcleo técnico *senior*, formado en general por profesores —quienes desarrollan los modelos y el software que después se usan de manera aplicada—; economistas de gobierno, del sector privado y de organismos multilaterales que vienen a resolver problemas concretos de modelación de política; y estudiantes de doctorado que presentan sus trabajos.
+El público se reparte en tres capas: un núcleo técnico *senior*, en general profesores, que desarrolla los modelos y el software; economistas de gobierno, del sector privado y de organismos multilaterales que vienen a resolver problemas concretos de modelación de política; y estudiantes de doctorado que presentan sus trabajos.
 
-**El registro es alto y decididamente técnico.** Las sesiones asumen que el público sabe leer un modelo económico de equilibrio general. De ahí una implicación práctica: **el valor para los estudiantes del Tec no está solamente en las sesiones plenarias, sino también en los cursos cortos de modelación y en el contacto directo con los modeladores y economistas.** Conviene planear desde ahora esa participación.
+**El registro es alto y decididamente técnico.** Las sesiones asumen que el público sabe leer un modelo económico de equilibrio general, y eso fija el nivel al que la Escuela tendría que llegar preparada.
 
-**Las plenarias marcan el nivel.** En años recientes las han abierto **Samuel Kortum**, de Yale, director de la Cowles Foundation y coautor del modelo Eaton–Kortum; **Ottmar Edenhofer**, del Instituto de Potsdam y excopresidente del Grupo III del IPCC; y **Akinwumi Adesina**, presidente del Banco Africano de Desarrollo.
+**Las plenarias marcan el nivel.** En años recientes las han abierto **Samuel Kortum**, de Yale, coautor del modelo Eaton–Kortum; **Ottmar Edenhofer**, del Instituto de Potsdam y excopresidente del Grupo III del IPCC; y **Akinwumi Adesina**, presidente del Banco Africano de Desarrollo.
 
 ---
 
 ## ¿Qué implicaría para el Tec, y qué no?
 
-**No se requiere aportación financiera.** Purdue University confirmó por escrito que GTAP asume la responsabilidad financiera completa y envía a su propio equipo a operar el evento: registro, programa, participantes, presupuesto.
+**No se requiere aportación financiera.** El equipo de Purdue University opera el evento completo: registro, programa, participantes, presupuesto.
 
-La sede aporta apoyo logístico: reserva de espacios, un enlace de eventos que conozca el lugar (campus o centro de convenciones), personal de audio y video, y coordinación en la selección de servicios de alimentos. Los descuentos son bienvenidos pero **opcionales**. **Las fechas tienen margen.** Las 28 ediciones presenciales se han celebrado entre el 5 y el 30 de junio.
+**Las fechas tienen margen.** Las 28 ediciones presenciales se han celebrado entre el 5 y el 30 de junio, así que hay espacio para acomodar el calendario académico de la sede.
 
 ## ¿Por qué conviene al Tec?
 
-- **Posicionamiento.** GTAP es la herramienta estándar con la que los socios comerciales de México evalúan los acuerdos que firman con el país, y en México se usa poco. Ser sede daría a la Escuela una razón concreta para cerrar esa distancia, y la haría visible ante los equipos que ya trabajan con estos modelos.
+- **Posicionamiento.** GTAP es la herramienta estándar con la que los socios comerciales de México evalúan los acuerdos que firman con el país, y en México se usa poco. Ser sede daría a la Escuela una razón concreta para cerrar esa distancia, y la pondría frente a los organismos multilaterales que financian este tipo de investigación.
 - **Formación y capacidad propia.** Tener lista para junio de 2029 una vía de entrada propia —un seminario, un grupo de trabajo o un curso de modelación dentro de la Escuela— dejaría a alumnos y profesores en condiciones de aprovechar la semana: las sesiones técnicas, el contacto directo con quienes construyen y operan estos modelos, y los cursos cortos que GTAP imparte a su red.
 - **Puerta de entrada al consorcio.** Purdue University impulsa «comunidades nacionales»: grupos de instituciones de un país que ingresan juntos y definen su propia agenda de modelación. India ya se organizó así, encabezada por el CSEP y con NITI Aayog; Sudáfrica está por hacerlo, y hay actividad en Brasil, Indonesia y Vietnam. **México no tiene presencia**, y el Tec quedaría en posición de encabezar la que se forme.
+
+En noviembre de 2027 el Tec recibe en su campus Guadalajara la reunión **LACEA–LAMES**, terreno de la econometría y la microeconomía aplicada. GTAP es el congreso de la otra familia de métodos: el equilibrio general y la evaluación de política a escala global. En dos años la institución habría alojado las dos.
 
 ## Esquema propuesto: candidatura conjunta Tec–UANL
 
@@ -73,7 +75,7 @@ El convenio formal sería **Tec–Purdue**, para no cargar la candidatura con la
 
 ## Lo que se solicita en esta etapa
 
-No se requiere aún un compromiso institucional. Por ahora se pide **luz verde para preparar la candidatura**: explorar con servicios de campus la disponibilidad de espacios en junio de 2029 y plantear una invitación académica a la UANL, para llegar a la convocatoria de enero con una propuesta sólida.
+Se pide **luz verde para preparar la candidatura**: explorar con servicios de campus la disponibilidad de espacios en junio de 2029 y plantear la invitación académica a la UANL, para llegar a la convocatoria de enero con una propuesta sólida.
 
 ---
 
