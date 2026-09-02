@@ -1,6 +1,6 @@
 # Conferencia Anual GTAP 2029 en Monterrey
 
-**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · Agosto 2026**
+**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 2 de septiembre de 2026**
 
 ---
 
