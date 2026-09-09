@@ -1,13 +1,13 @@
 # Conferencia Anual GTAP 2029 en Monterrey
 
-**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 2 de septiembre de 2026**
+**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 9 de septiembre de 2026**
 
 ---
 
 :::resumen
 | **¿Qué es la<br>conferencia?** | En 2029 será el trigésimo segundo encuentro anual del Global Trade Analysis Project, que coordina Purdue University, al cual asisten alrededor de 225 participantes durante una semana. Los métodos que se discuten son de equilibrio general: sirven para analizar decisiones que impactan a todos los mercados a la vez, como la renegociación de un tratado comercial, un cambio en la política climática o una reforma fiscal de largo alcance. Esta candidatura busca aprovechar el interés que hay en el centro GTAP por llevar el congreso a América Latina; sería la tercera vez, después de Cartagena y Santiago. Las sedes de 2027 y 2028 ya se asignaron a Montreal y Bruselas. |
 | **El valor institucional<br>para el Tec** | Como sede, la Escuela alojaría un foro global de modelación estructural para la evaluación de política pública, en economía ambiental y del desarrollo, sobre temas que México tiene enfrente: el T-MEC, la transición energética, las tendencias demográficas. Tendría ocasión de convocar a los usuarios naturales de estos modelos en México —INEGI, Hacienda, la Secretaría de Economía, Banxico— alrededor de una agenda concreta, y le abriría la puerta a un consorcio de 28 instituciones donde están los equipos que operan estos sistemas de modelación. |
-| **El costo<br>y el apoyo** | No se requiere aportación financiera. Purdue University confirmó por escrito que GTAP asume la responsabilidad financiera completa y opera el evento con su propio equipo. Lo que aporta la sede es logístico: espacios, un enlace de eventos, personal de audio y video, y coordinación de alimentos. Los descuentos son bienvenidos y opcionales. Sujeto a disponibilidad, el campus Monterrey es el lugar natural, pero los congresos anteriores se han hecho tanto en campus universitarios como en centros de convenciones. |
+| **El costo<br>y el apoyo** | No se requiere aportación financiera. Purdue University confirmó por escrito que GTAP asume la responsabilidad financiera completa y opera el evento con su propio equipo. Lo que aporta la sede es logístico: reserva de espacios, un enlace de eventos, personal de audio y video, y coordinación de alimentos. Los descuentos son bienvenidos y opcionales. Sujeto a disponibilidad, el campus Monterrey es el lugar natural, pero los congresos anteriores se han hecho tanto en campus universitarios como en centros de convenciones. |
 | **¿Qué se pide en<br>este documento?** | No se requiere aún un compromiso institucional. Por ahora se pide luz verde para preparar la candidatura: explorar la disponibilidad de espacios en junio de 2029 y plantear una invitación académica a la UANL, que cuenta con algunos modeladores especializados. |
 :::
 
@@ -41,7 +41,7 @@ El público se reparte en tres capas: un núcleo técnico *senior*, en general p
 
 **El registro es alto y decididamente técnico.** Las sesiones asumen que el público sabe leer un modelo económico de equilibrio general, y eso fija el nivel al que la Escuela tendría que llegar preparada.
 
-**Las plenarias marcan el nivel.** En años recientes las han abierto **Samuel Kortum**, de Yale, coautor del modelo Eaton–Kortum; **Ottmar Edenhofer**, del Instituto de Potsdam y excopresidente del Grupo III del IPCC; y **Akinwumi Adesina**, presidente del Banco Africano de Desarrollo.
+**Las plenarias marcan el nivel.** En años recientes han estado a cargo de **Samuel Kortum**, de Yale, coautor del modelo Eaton–Kortum; **Ottmar Edenhofer**, del Instituto de Potsdam y excopresidente del Grupo III del IPCC; y **Akinwumi Adesina**, presidente del Banco Africano de Desarrollo.
 
 ---
 
