@@ -23,8 +23,8 @@ que esté disponible sin engordar el documento que la gente realmente lee.
 | `acerca.html` | Quiénes, en qué estado está el proceso y cómo se verificó cada cifra |
 | `Ficha_GTAP2029_Monterrey.pdf` | La ficha de dos páginas que circula entre directivos |
 | `Ficha_GTAP2029_Monterrey.md` | Su fuente en Markdown |
-| `scripts/` | El código que reproduce el conteo y el que genera el PDF |
-| `datos/` | La salida cruda de la consulta a OpenAlex |
+| `bibliometria/` | Copia publicada del conteo: scripts, resultados, bitácoras y protocolo |
+| `scripts/md2pdf.py` | Copia publicada del conversor de Markdown a PDF |
 
 Las cuatro páginas son HTML autocontenido: sin CDN, sin JavaScript, sin dependencias externas.
 
@@ -37,6 +37,10 @@ sobrescriben en la siguiente corrida. Salen todos de un solo archivo maestro,
 es submódulo), y se regeneran desde ahí con `python3 construir.py`. Ese mismo
 script reescribe la barra de navegación de `bibliometria.html` y `acerca.html`,
 para que las cuatro páginas ofrezcan siempre el mismo menú en el mismo orden.
+
+`bibliometria/` y `scripts/md2pdf.py` también son copias: ese mismo script las
+espeja desde `bibliometria/` y `md2pdf.py` de la raíz del repositorio de trabajo, y
+borra de este lado lo que ya no exista allá. Se editan allá, nunca aquí.
 
 Lo que sí se edita a mano aquí es el cuerpo de `bibliometria.html` y `acerca.html`,
 y este README.
@@ -84,8 +88,8 @@ misma corrida, para que se pueda comparar sin volver a consultar las APIs.
 Sin dependencias externas: sólo biblioteca estándar de Python 3, sin llave de API. `05` y `07`
 tardan varios minutos porque recorren las 323 obras de la semilla una por una.
 
-`scripts/` en este directorio conserva los sondeos previos con Semantic Scholar (`cite.py`,
-`cite2.py`) y el generador del PDF.
+Los sondeos previos con Semantic Scholar, anteriores al conteo en OpenAlex, están en
+[`bibliometria/sondeos_s2/`](bibliometria/sondeos_s2/).
 
 ## Regenerar la ficha y las dos páginas que salen de ella
 
@@ -111,9 +115,12 @@ cuántas páginas ocupa. El script imprime el número de páginas al terminar.
 
 ## Estado
 
-**En exploración.** No hay compromiso institucional de ninguna de las dos universidades ni
-una candidatura presentada. Purdue publica la convocatoria de expresiones de interés en enero
-de 2027, con fecha límite el 28 de febrero y anuncio del coanfitrión a fines de abril.
+**En exploración, con un primer acuerdo.** La Facultad de Economía de la UANL ya está de
+acuerdo con el esquema que propone la ficha: el Tec como anfitrión institucional y la UANL
+por la vía académica. No hay todavía un compromiso institucional formal de ninguna de las dos
+universidades ni una candidatura presentada. Purdue publica la convocatoria de expresiones de
+interés en enero de 2027, con fecha límite el 28 de febrero y anuncio del coanfitrión a fines
+de abril.
 
 ## Contacto
 

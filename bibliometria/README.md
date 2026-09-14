@@ -176,6 +176,27 @@ mano— y deduplica entre ellas. Sus denominadores de OpenAlex se **derivan** de
 `resultados_openalex.json`, fusionando los registros que OpenAlex parte en dos;
 no se escriben a mano.
 
+## Qué archivo respalda cada cifra
+
+| Archivo | Qué contiene |
+|---|---|
+| `resultados_universo_ampliado.json` | **La cifra de cabecera:** 5,878 trabajos citantes, 129 países, 24 con afiliación mexicana, 8,825 citas a las 323 obras. |
+| `resultados_openalex.json` y `resultados_bibliometria_gtap.json` | La Ruta A estricta del 25 de agosto: 3,947 trabajos sobre 14 obras canónicas, 14 mexicanos. El segundo es el entregable que ensambla `03_ensamblar_entregable.py`. |
+| `resultados_cobertura.json` | Las razones OpenAlex/Crossref/Semantic Scholar, obra por obra. |
+| `resultados_reconciliacion.json` | La descomposición de la brecha frente al «24,400+» de 2017. |
+| `resultados_pop.json` y `comparacion_scholar_openalex.csv` | La Ruta B: Google Scholar contra OpenAlex, obra por obra. |
+| `log_*.txt` | Las bitácoras de cada corrida. |
+
+El universo de 12,499 trabajos que mencionan «GTAP» en texto completo, con 50 mexicanos (0.40%), no está en estos JSON: se documenta en `../Nota_Bibliometrica_GTAP.md` y en `../sitio/bibliometria.html`.
+
+## Sondeos previos con Semantic Scholar
+
+`sondeos_s2/` guarda los dos sondeos del 25 de agosto que precedieron al conteo en OpenAlex. Ninguno alimenta un resultado vigente. `s2_obras_canonicas_y_corpus.py` consulta las citas de seis obras canónicas y cuenta por año los trabajos que mencionan GTAP; `s2_citas_recibidas_por_el_corpus.py` suma las citas que *reciben* esos trabajos, que es la cantidad que arriba se descarta. Se conservan para que esa cifra tenga rastro. Escriben sus JSON en el directorio desde el que se corren.
+
+## Copia publicada
+
+Esta carpeta se espeja completa en `../sitio/bibliometria/` en cada corrida de `python3 construir.py`, y el script borra del lado del sitio lo que ya no exista aquí. La copia del sitio no se edita: cualquier cambio se hace en esta carpeta.
+
 ## Verificación
 
 `04_verificar.py` corre tres pruebas:
