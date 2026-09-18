@@ -185,6 +185,7 @@ no se escriben a mano.
 | `resultados_cobertura.json` | Las razones OpenAlex/Crossref/Semantic Scholar, obra por obra. |
 | `resultados_reconciliacion.json` | La descomposición de la brecha frente al «24,400+» de 2017. |
 | `resultados_pop.json` y `comparacion_scholar_openalex.csv` | La Ruta B: Google Scholar contra OpenAlex, obra por obra. |
+| `metricas_revista_jgea.json` | Las dos medidas de impacto del *Journal of Global Economic Analysis* que cita la ficha: el cuartil Q1 de Scopus en Economics and Econometrics y el lugar 148 de 3,493 del ranking agregado de IDEAS/RePEc, consultadas el 17 de septiembre de 2026. Trae también las cifras autorreportadas que se descartaron. |
 | `log_*.txt` | Las bitácoras de cada corrida. |
 
 El universo de 12,499 trabajos que mencionan «GTAP» en texto completo, con 50 mexicanos (0.40%), no está en estos JSON: se documenta en `../Nota_Bibliometrica_GTAP.md` y en `../sitio/bibliometria.html`.

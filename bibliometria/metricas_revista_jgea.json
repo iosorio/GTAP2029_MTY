@@ -1,0 +1,78 @@
+{
+  "revista": "Journal of Global Economic Analysis",
+  "editor": "Global Trade Analysis Project, Departamento de Economía Agrícola, Purdue University",
+  "fecha_consulta": "2026-09-17",
+  "proposito": "Respalda las dos medidas de impacto de la revista que cita la ficha (fuente/ficha.md, bloque «Publicación y encuentro»): el cuartil de Scopus, que es el lenguaje que usa el Tec, y el lugar en el ranking agregado de IDEAS/RePEc, que da la referencia de universo. No forma parte del conteo de citas a las publicaciones de GTAP: ese vive en resultados_universo_ampliado.json.",
+  "metodo": "Las cifras se leyeron a mano en las dos fichas públicas de la revista el 17 de septiembre de 2026. No hay script: ninguna de las dos fuentes ofrece API abierta y ambas se actualizan en ciclos propios. Para reproducir el registro se abren las dos URL y se comparan los valores contra este archivo.",
+  "metricas": [
+    {
+      "fuente": "Scimago Journal & Country Rank (indicadores calculados sobre Scopus)",
+      "indicador": "Cuartil Scopus",
+      "valor": "Q1",
+      "universo": "Revistas de la categoría en Scopus",
+      "categoria": "Economics and Econometrics",
+      "nota": "Es la cifra que cita la línea compartida de la ficha. Se mantiene en Q1 en los cinco años que Scimago reporta, de 2021 a 2025.",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101033050&tip=sid"
+    },
+    {
+      "fuente": "Scimago Journal & Country Rank (indicadores calculados sobre Scopus)",
+      "indicador": "SJR",
+      "valor": "1.590",
+      "universo": null,
+      "categoria": "Economics and Econometrics",
+      "nota": "Valor de 2025. El SJR pondera cada cita recibida por el prestigio de la revista que la emite, así que no es comparable con un factor de impacto simple. Lo cita el bloque extendido de la ficha.",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101033050&tip=sid"
+    },
+    {
+      "fuente": "Scimago Journal & Country Rank (indicadores calculados sobre Scopus)",
+      "indicador": "h-index",
+      "valor": "19",
+      "universo": null,
+      "categoria": null,
+      "nota": "Acumulado de la revista desde su primer año indexado. No se cita en la ficha; queda asentado por contexto.",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101033050&tip=sid"
+    },
+    {
+      "fuente": "Scimago Journal & Country Rank (indicadores calculados sobre Scopus)",
+      "indicador": "Citas por documento (2 años)",
+      "valor": "1.75",
+      "universo": null,
+      "categoria": null,
+      "nota": "Valor de 2025. Es el indicador más cercano a un factor de impacto convencional. No se cita en la ficha.",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101033050&tip=sid"
+    },
+    {
+      "fuente": "IDEAS/RePEc, Aggregate Rankings for Journals",
+      "indicador": "Lugar en el ranking agregado de revistas",
+      "valor": "148",
+      "universo": "3,493 revistas",
+      "categoria": null,
+      "nota": "Equivale al 4.24% superior. Es la segunda cifra que cita la línea compartida de la ficha. RePEc recalcula este ranking cada mes, de modo que el lugar exacto cambia entre consultas; por eso el bloque extendido fecha la consulta.",
+      "url": "https://ideas.repec.org/top/top.journals.all.html"
+    },
+    {
+      "fuente": "IDEAS/RePEc, Aggregate Rankings for Journals",
+      "indicador": "Componente: factor de impacto simple",
+      "valor": "76",
+      "universo": null,
+      "categoria": null,
+      "nota": "Uno de los indicadores que entran al ranking agregado, no una cifra independiente. Se asienta para que el 148 tenga desglose.",
+      "url": "https://ideas.repec.org/top/top.journals.all.html"
+    },
+    {
+      "fuente": "IDEAS/RePEc, Aggregate Rankings for Journals",
+      "indicador": "Componente: h-index",
+      "valor": "491",
+      "universo": null,
+      "categoria": null,
+      "nota": "El otro componente consultado. La distancia entre el lugar 76 del factor de impacto y el 491 del h-index refleja que la revista es joven: acumula poco volumen histórico y cita bien en el margen.",
+      "url": "https://ideas.repec.org/top/top.journals.all.html"
+    }
+  ],
+  "descartado": [
+    "La página institucional de la revista (jgea.org, sección About) reporta tres posiciones propias: Scopus 52 de 705, Scimago 58 de 719 y RePEc 30 de 3000. Ninguna de las tres se usa en la ficha.",
+    "La de RePEc es la que fuerza el descarte: el lugar 30 de 3000 no reconcilia con ninguna columna de la lista agregada consultada el 17 de septiembre de 2026, donde la revista aparece en el lugar 148 de 3,493. El recálculo mensual de RePEc no cubre una diferencia de ese tamaño.",
+    "Las de Scopus y Scimago no traen fecha, categoría ni liga, así que no se pueden reproducir. No se verificaron una por una: al no reconciliar la tercera cifra del mismo bloque, se descartó el bloque completo en lugar de adoptar dos cifras sueltas de una fuente que ya falló una vez.",
+    "Todas son cifras autorreportadas por el editor. Se prefieren las fichas de Scimago y de IDEAS/RePEc, que un tercero puede abrir y verificar."
+  ]
+}
