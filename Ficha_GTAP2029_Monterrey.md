@@ -1,6 +1,6 @@
 # Conferencia Anual GTAP 2029 en Monterrey
 
-**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 9 de septiembre de 2026**
+**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 18 de septiembre de 2026**
 
 ---
 
@@ -20,7 +20,7 @@ Para eso sostiene cuatro pilares:
 - **La base de datos.** Es el estándar mundial para el análisis económico de equilibrio general: una representación consistente y auditada de la economía global —flujos bilaterales de comercio, producción, consumo y aranceles— que cubre más de 145 países, el 99% del PIB global y 65 sectores.
 - **El modelo estándar y el software.** Es un modelo de equilibrio general computable multirregional, documentado y de uso abierto.
 - **Formación.** Imparte cursos cortos de modelación; el curso anual va en su 33ª edición.
-- **Publicación y encuentro.** Publica el *Journal of Global Economic Analysis* y organiza la conferencia anual.
+- **Publicación y encuentro.** Publica el *Journal of Global Economic Analysis* y organiza la conferencia anual. La revista se ubica en el cuartil superior (Q1) de Scopus en Economics and Econometrics y ocupa el lugar 148 de 3,493 en el ranking agregado de revistas de IDEAS/RePEc.
 
 **El alcance académico de GTAP es medible:** 5,878 trabajos académicos distintos, procedentes de 129 países, citan directamente las publicaciones del proyecto, con un promedio de 280 nuevos trabajos por año durante la última década.
 
