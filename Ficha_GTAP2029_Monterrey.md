@@ -1,6 +1,6 @@
 # Conferencia Anual GTAP 2029 en Monterrey
 
-**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 18 de septiembre de 2026**
+**Ficha informativa — Escuela de Ciencias Sociales y Gobierno, Tecnológico de Monterrey · 19 de septiembre de 2026**
 
 ---
 
@@ -33,7 +33,7 @@ Lo financian y orientan **28 instituciones miembro**: Banco Mundial, FMI, OMC, O
 | **Perfil** | Es un congreso de modelación aplicada, no una conferencia convencional de política pública. Kioto 2026 tuvo 54 sesiones paralelas, en las que se presentaron 190 trabajos de investigación. |
 | **Sedes recientes** | Cartagena 2018, Varsovia 2019, Burdeos 2023, Fort Collins 2024, Kigali 2025, Kioto 2026. |
 
-**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca.** Y **2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria que se publica en enero de 2027.
+**América Latina ha sido sede dos veces en veintinueve ediciones. México nunca. Y 2029 es la siguiente edición abierta**, la que Purdue University resuelve con la convocatoria que se publica en enero de 2027.
 
 ## ¿Quién asiste?
 
@@ -81,7 +81,7 @@ Se pide **luz verde para preparar la candidatura**: explorar con servicios de ca
 
 ## Quiénes proponen la candidatura
 
-**Israel Osorio Rodarte** — EXATEC, con Licenciatura en Economía (1998–2003) y Maestría en Economía y Política Pública (2012). Es economista de comercio internacional y desarrollo, con cerca de veinte años en modelación económica de equilibrio general aplicada a política pública. Trabaja en el **Banco Mundial** y ha colaborado con la OCDE, Naciones Unidas, el BID y el German Development Institute. Pertenece a la red GTAP desde hace más de una década.
+**Israel Osorio Rodarte** — EXATEC, con Licenciatura en Economía (1998–2003) y Maestría en Economía y Política Pública (2012). Es economista de comercio y desarrollo internacional, con cerca de quince años en modelación económica de equilibrio general aplicada. Trabaja en el **Banco Mundial** y ha colaborado con la OCDE, Naciones Unidas, el BID y el German Development Institute. Pertenece a la red GTAP desde hace más de una década.
 iosoriorodarte@worldbank.org
 
 **Marcos Esaú Domínguez Viera** — Es egresado de la Facultad de Economía de la UANL (2006) y doctor en Economía del Desarrollo por Wageningen University (2022). Investiga en **Wageningen Social and Economic Research**, institución miembro del consorcio GTAP, y trabaja temas de sistemas alimentarios, política fiscal, cambio climático y dietas saludables en México, Vietnam y Jordania.
